@@ -1,9 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import Header from './Header';
+import Header from './components/Header';
 import reportWebVitals from './reportWebVitals';
-import Slider from './Slider';
+import Slider from './components/Slider';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

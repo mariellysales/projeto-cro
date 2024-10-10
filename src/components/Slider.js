@@ -6,7 +6,7 @@ import 'swiper/css/scrollbar';
 import { Navigation, Pagination, Scrollbar, Autoplay } from 'swiper/modules';
 import { useState } from 'react';
 
-import './Slider.css';
+import styles from './Slider.module.css';
 
 
 const Slider = () => {  
@@ -19,7 +19,7 @@ const Slider = () => {
     ];
 
     return (
-        <div className='container'>
+        <div className={styles.container}>
             <Swiper
                 modules={[Navigation, Pagination, Scrollbar, Autoplay ]}
                 slidesPerView={slidesPerView}
@@ -36,7 +36,7 @@ const Slider = () => {
                             <img 
                             src={slide.image} 
                             alt={slide.id} 
-                            className='slide-item'
+                            className={styles.slideItem}
                             />
                         </SwiperSlide>
                     ))}
