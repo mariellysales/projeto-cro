@@ -35,7 +35,13 @@
 
 .navLi {
   display: inline;
-  margin: 0 10px;
+  padding: 70px;
+
+}
+
+.navLi:hover {
+  padding: 70px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
 .navLink {
@@ -64,9 +70,20 @@
   align-items: center;
   color: white;
   font-size: 24px;
+  margin: 0 5px
 }
 
-/* Responsividade */
+@media (max-width: 1150px) {
+  .navLi {
+    padding: 25px;
+  }
+
+  .navLi:hover {
+    padding: 25px;
+
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -82,11 +99,27 @@
 
   .navUl {
     flex-direction: column;
+    padding: 10px;
     gap: 10px;
+  }
+
+  .navLi {
+    display: inline;
+    padding: 10px;
+  }
+
+  .navLi:hover {
+    padding: 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
   }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 400px) {
+  .navLi:hover {
+    padding: 13px;
+    box-shadow: 0 4px 13px rgba(0, 0, 0, 0.3);
+  }
+
   .navLink {
     font-size: 13px;
   }
@@ -123,6 +156,7 @@
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
