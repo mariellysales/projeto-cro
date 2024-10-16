@@ -35,12 +35,12 @@
 
 .navLi {
   display: inline;
-  padding: 70px;
+  padding: 40px;
 
 }
 
 .navLi:hover {
-  padding: 70px;
+  padding: 40px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
 }
 
