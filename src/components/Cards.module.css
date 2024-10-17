@@ -1,75 +1,61 @@
-.sectionCard{
-    background-color: #6d131a24;
-    padding-bottom: 2%;
-  }
+.sectionCard {
+  padding-bottom: 2%;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.cards:hover {
+  background-color: #6d131a;
+  box-shadow: 0 0 20px  #6d131a
+}
+
+ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.icons {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+}
+
+.cardTitle {
+  font-size: 35px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+@media (max-width: 390px) {
   .cards {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 150px;
-      height: 150px;
-      background-color: lightblue;
-      border: 1px solid #ccc;
-      border-radius: 100px;
-      box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); 
-    }
-  
-    @keyframes shake {
-      0%, 100% { transform: translateX(0); }
-      20%, 60% { transform: translateX(-10px); }
-      40%, 80% { transform: translateX(10px); }
-    }
-    
-    .cards:hover {
-      animation: shake 0.5s; 
-      background-color: #f0f8ff; 
-      box-shadow: 0 0 20px rgba(255, 255, 255, 0.8); 
-    }
-  
-  .cardTitle{
-    font-size: 2.5rem;
-    font-family: 'Montserrat', sans-serif;
-    color: #6d131a;
-    padding-left: 45%;
-    padding-top: 1em;
-    text-transform: uppercase;
+    width: 8vh;
+    height: 8vh;
   }
-  
-  ul {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 50px;
-    justify-content: center;
-   }
-  
-  ul li {
-    list-style-type: none;
-  } 
-  
-  .icons{
-    font-size: 70px;
-  }
-  
+
   .title {
-    font-size: 25px;
+    font-size: 2vh;
     font-weight: bold;
-    text-align: center;
     margin-top: 10px;
   }
-  
-  @media (max-width: 390px) {
-    .cards {
-      width: 8vh;
-      height: 8vh;
-    }
-    .icons{
-      font-size: 30px;
-    }
-  
-    .title {
-      font-size: 2vh;
-      font-weight: bold;
-      text-align: center;
-      margin-top: 10px;
-    }
-  }
+}
