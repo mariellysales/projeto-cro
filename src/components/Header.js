@@ -1,6 +1,7 @@
 import styles from "./Header.module.css";
-import { FaFacebookSquare, FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp } from "react-icons/fa";
 import { useState } from "react";
+import { FaSquareFacebook } from "react-icons/fa6";
 
 function Header() {
   const currentUrl =
@@ -41,13 +42,13 @@ function Header() {
         <div className={styles.logo}>
           <img
             className={styles.imageLogo}
-            src="/images/tooth.png"
+            src="/images/cro.png"
             alt="Logo"
           />
         </div>
         <nav className={styles.nav}>
           <ul className={styles.navUl}>
-            {["Início", "Sintomas", "Conhecimento", "Depoimentos"].map(
+            {["Início", "Conhecimento", "Sintomas", "Depoimentos"].map(
               (item, index) => (
                 <li className={styles.navLi} key={index}>
                   <a className={styles.navLink} href={`#${item.toLowerCase()}`}>
@@ -59,13 +60,13 @@ function Header() {
           </ul>
         </nav>
         <div className={styles.socialIcons}>
-          <button className={styles.socialIcon} onClick={facebookRedirect}>
-            <FaFacebookSquare />
+          <button className={`${styles.socialIcon} ${styles.facebook}`} onClick={facebookRedirect}>
+            <FaSquareFacebook />
           </button>
-          <button className={styles.socialIcon} onClick={copyToClipboard}>
+          <button className={`${styles.socialIcon} ${styles.instagram}`} onClick={copyToClipboard}>
             <FaInstagram />
           </button>
-          <button className={styles.socialIcon} onClick={whatsappRedirect}>
+          <button className={`${styles.socialIcon} ${styles.whatsapp}`} onClick={whatsappRedirect}>
             <FaWhatsapp />
           </button>
         </div>

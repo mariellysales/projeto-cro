@@ -1,6 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600&display=swap');
+
 .header {
-  background-color: #6d131a;
-  padding: 10px 0;
   color: white;
 }
 
@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px 100px;
 }
 
 .logo {
@@ -23,8 +23,10 @@
 
 .nav {
   flex-grow: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
 
 .navUl {
   list-style: none;
@@ -36,24 +38,24 @@
 .navLi {
   display: inline;
   padding: 40px;
+  font-family: 'Ysabeau Office';
+  text-transform: uppercase;
 
 }
 
 .navLi:hover {
   padding: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #6d131a;
 }
 
 .navLink {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
-.navLink:hover {
-  color: #f1c40f;
+.navLi:hover .navLink {
+  color: white;
 }
 
 .socialIcons {
@@ -64,16 +66,33 @@
 .socialIcon {
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  color: white;
-  font-size: 24px;
-  margin: 0 5px
+  font-size: 30px;
 }
 
-@media (max-width: 1150px) {
+.socialIcon.facebook svg {
+  color: #3b5998;
+}
+
+.socialIcon.instagram {
+  color: #E1306C;
+}
+
+.socialIcon.whatsapp {
+  color: #25D366;
+}
+
+@media (max-width: 1367px) {
+  .container{
+    padding: 0px 50px;
+  }
+
+  .imageLogo {
+    height: 60px;
+  }
+
   .navLi {
     padding: 25px;
   }
@@ -82,19 +101,56 @@
     padding: 25px;
 
   }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+  .socialIcons {
+    margin-right: 6px;
+    font-size: 50px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+  }
+
+  .logo{
+    margin-bottom: 25px;
+  }
+
+  .socialIcon{
+    font-size: 30px;
+  }
+
+  .nav{
+  margin-bottom: 30px;
+  }
+
+  .navLi{
+    padding: 15px;
+  }
 }
 
 @media (max-width: 768px) {
-  .container {
+  .container{
+    display: flex;
     flex-direction: column;
+    padding: 0px 5px;
   }
+
 
   .nav {
     margin-bottom: 20px;
   }
 
   .imageLogo {
-    height: 55px;
+    height: 50px;
   }
 
   .navUl {
@@ -103,18 +159,25 @@
     gap: 10px;
   }
 
-  .navLi {
-    display: inline;
-    padding: 10px;
+  .navLi{
+    padding: 15px;
   }
 
   .navLi:hover {
-    padding: 5px;
+    padding: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .navLink {
+    font-size: 15px;
   }
 }
 
 @media (max-width: 400px) {
+  .navLi {
+    padding: 5px;
+  }
+
   .navLi:hover {
     padding: 13px;
     box-shadow: 0 4px 13px rgba(0, 0, 0, 0.3);
@@ -125,7 +188,7 @@
   }
 
   .socialIcons {
-    gap: 50px;
+    gap: 30px;
   }
 }
 
