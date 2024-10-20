@@ -3,3 +3,21 @@
     height: 500px;
     object-fit: cover;
 }
+
+@media (max-width: 1024px) {
+    .slide-item {
+        height: 100%; 
+        width: 100%;
+}
+}
+
+@media (max-width: 390px) {
+    .container-swiper {
+      height: 200px;
+      width: 100%;
+    }
+    .slide-item {
+      height: 100%; 
+      width: 50%;
+    }
+}
