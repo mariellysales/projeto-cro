@@ -1,0 +1,59 @@
+.sectionComents {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    width: 1200px;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comentsTitle {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.comentsTitle h1 {
+    font-size: 2em;
+    color: #333;
+}
+
+.coments {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.comentWrapper {
+    display: flex;
+    flex-direction: row;
+    flex: 1 1 45%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.comentIframe {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+}
+
+.comentIframe iframe {
+    width: 100%;
+    height: 250px;
+    border: none;
+}
+
+.coment {
+    flex: 1;
+    padding: 20px;
+}
+
+.comentText {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #666;
+}

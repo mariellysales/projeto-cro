@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Style from "./Cards.module.css";
 
 const icons = [
@@ -28,9 +28,9 @@ const icons = [
   },
 ];
 
-const Card = ({ imgSrc, name, onClick }) => (
+const Card = ({ imgSrc, name }) => (
   <li>
-    <div className={Style.cards} onClick={onClick}>
+    <div className={Style.cards}>
       <img src={imgSrc} alt={name} className={Style.icons} />
     </div>
     <p className={Style.title}>{name}</p>
@@ -38,11 +38,6 @@ const Card = ({ imgSrc, name, onClick }) => (
 );
 
 const Cards = () => {
-  const [selectedCard, setSelectedCard] = useState(null);
-
-  const handleCardClick = (index) => {
-    setSelectedCard(index === selectedCard ? null : index);
-  };
 
   return (
     <section className={Style.sectionCard}>
@@ -54,7 +49,6 @@ const Cards = () => {
               key={index}
               imgSrc={icon.imgSrc}
               name={icon.name}
-              onClick={() => handleCardClick(index)}
             />
           ))}
         </ul>
