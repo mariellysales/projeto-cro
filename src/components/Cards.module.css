@@ -14,11 +14,6 @@
   cursor: pointer;
 }
 
-.cards:hover {
-  background-color: #6d131a;
-  box-shadow: 0 0 20px  #6d131a
-}
-
 ul {
   display: flex;
   flex-wrap: wrap;
@@ -47,15 +42,14 @@ ul li {
   margin-top: 10px;
 }
 
-@media (max-width: 390px) {
+@media (max-width: 490px) {
   .cards {
-    width: 8vh;
-    height: 8vh;
+    width: 6vh;
+    height: 6vh;
   }
 
   .title {
-    font-size: 2vh;
-    font-weight: bold;
+    font-size: 0.5em;
     margin-top: 10px;
   }
 }
