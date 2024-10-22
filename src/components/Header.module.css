@@ -14,7 +14,6 @@
 
 .logo {
   flex: 0;
-  font-size: 30px;
 }
 
 .imageLogo {
@@ -133,7 +132,7 @@
   }
 
   .navLi{
-    padding: 15px;
+    padding: 25px;
   }
 }
 
@@ -169,7 +168,13 @@
   }
 
   .navLink {
-    font-size: 15px;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .navUl{
+    padding: 0px;
   }
 }
 
