@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600&display=swap');
+  /* Menu mobile */
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #6d131a;
+}
+/* Fim menu mobile */
 
 .header {
   color: white;
@@ -137,6 +145,101 @@
 }
 
 @media (max-width: 768px) {
+  /* Menu mobile */
+  .nav, .socialIcons {
+    display: none;
+  }
+
+  .header {
+    height: 65px;
+  }
+
+  .mobileOnly {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    z-index: 10;
+    overflow-y: auto;
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    z-index: 20;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+
+  .navMobile {
+    margin-top: 80px;
+  }
+
+  .navUlMobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .navLiMobile {
+    margin: 15px 0;
+  }
+
+  .navLiMobile:hover {
+    color: #6d131a;
+  }
+
+  .navLinkMobile {
+    color: #6d131a;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+
+  .navLinkMobile:hover {
+    color: #6d131a;
+  }
+
+  .socialIconsMobile {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .socialIconMobile {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .socialIconMobile.facebook svg {
+    color: #3b5998;
+  }
+  
+  .socialIconMobile.instagram {
+    color: #E1306C;
+  }
+  
+  .socialIconMobile.whatsapp {
+    color: #25D366;
+  }
+  /* Fim menu mobile*/
+
   .container{
     display: flex;
     flex-direction: column;

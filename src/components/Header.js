@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookSquare, FaInstagram, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { FaSquareFacebook } from "react-icons/fa6";
 
@@ -7,6 +7,7 @@ function Header() {
   const currentUrl =
     "https://www.youtube.com/watch?v=-wrsG0IGc-M&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&index=4"; // URL a ser compartilhada window.location.href
   const [showAlert, setShowAlert] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   const redirectToUrl = (url) => {
     window.open(url, "_blank");
@@ -36,9 +37,20 @@ function Header() {
     );
   };
 
+  // Função para alterar o estado do botão
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.container}>
+
+        {/* icone do menu hamburguer que aparece apenas em resuluçoes menores que 768px*/}
+        <div className={styles.menuIcon} onClick={toggleMenu}>
+          { menuOpen ? <FaTimes/> : <FaBars/> }
+        </div>
+
         <div className={styles.logo}>
           <img
             className={styles.imageLogo}
@@ -70,6 +82,38 @@ function Header() {
             <FaWhatsapp />
           </button>
         </div>
+
+        {/** Menu mobile */}
+        {menuOpen && (
+          <div className={styles.mobileOnly}>
+            <nav className={styles.navMobile}>
+              <ul className={styles.navUlMobile}>
+                {["Início", "Sintomas", "Conhecimento", "Depoimentos"].map(
+                  (item, index) => (
+                    <li className={styles.navLiMobile} key={index}>
+                      <a className={styles.navLinkMobile} href={`#${item.toLowerCase()}`}>
+                        {item}
+                      </a>
+                    </li>
+                  )
+                )}
+
+                <div className={styles.socialIconsMobile}>
+                  <button className={`${styles.socialIconMobile} ${styles.facebook}`} onClick={facebookRedirect}>
+                    <FaSquareFacebook />
+                  </button>
+                  <button className={`${styles.socialIconMobile} ${styles.instagram}`} onClick={copyToClipboard}>
+                    <FaInstagram />
+                  </button>
+                  <button className={`${styles.socialIconMobile} ${styles.whatsapp}`} onClick={whatsappRedirect}>
+                    <FaWhatsapp />
+                  </button>
+                </div>
+              </ul>
+            </nav>
+          </div>
+        )}  
+        
         {showAlert && (
           <div className={styles.popup}>
             <div className={styles.popupContent}>
