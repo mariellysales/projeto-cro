@@ -1,4 +1,3 @@
-// Footer.js
 import React from "react";
 import styles from "./Footer.module.css";
 import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaWhatsapp, FaClock, FaRegClock } from 'react-icons/fa';
@@ -21,7 +20,7 @@ function Footer() {
             <div className={styles.copy}>
                 <p>
                     &copy; 2024 Equipe de desenvolvimento:
-                    <a href="https://www.linkedin.com/in/link-do-diego" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> Diego </a>
+                    <a href="https://www.linkedin.com/in/diego-araujo-souza/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> Diego </a>
                     e
                     <a href="https://www.linkedin.com/in/marielly-sales-937407206" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> Marielly </a>
                     Todos os direitos reservados.

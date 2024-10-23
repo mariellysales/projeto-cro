@@ -1,11 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600&display=swap');
-  /* Menu mobile */
+
+/* Menu mobile */
 .menuIcon {
   display: none;
   cursor: pointer;
   font-size: 30px;
   color: #6d131a;
 }
+
 /* Fim menu mobile */
 
 .header {
@@ -92,7 +94,7 @@
 }
 
 @media (max-width: 1367px) {
-  .container{
+  .container {
     padding: 0px 50px;
   }
 
@@ -121,32 +123,34 @@
 }
 
 @media (max-width: 1024px) {
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
     padding: 0px 5px;
   }
 
-  .logo{
+  .logo {
     margin-bottom: 25px;
   }
 
-  .socialIcon{
+  .socialIcon {
     font-size: 30px;
   }
 
-  .nav{
-  margin-bottom: 30px;
+  .nav {
+    margin-bottom: 30px;
   }
 
-  .navLi{
+  .navLi {
     padding: 25px;
   }
 }
 
 @media (max-width: 768px) {
+
   /* Menu mobile */
-  .nav, .socialIcons {
+  .nav,
+  .socialIcons {
     display: none;
   }
 
@@ -230,22 +234,20 @@
   .socialIconMobile.facebook svg {
     color: #3b5998;
   }
-  
+
   .socialIconMobile.instagram {
     color: #E1306C;
   }
-  
+
   .socialIconMobile.whatsapp {
     color: #25D366;
   }
-  /* Fim menu mobile*/
 
-  .container{
+  .container {
     display: flex;
     flex-direction: column;
     padding: 0px 5px;
   }
-
 
   .nav {
     margin-bottom: 20px;
@@ -261,7 +263,7 @@
     gap: 10px;
   }
 
-  .navLi{
+  .navLi {
     padding: 15px;
   }
 
@@ -276,7 +278,7 @@
 }
 
 @media (max-width: 530px) {
-  .navUl{
+  .navUl {
     padding: 0px;
   }
 }

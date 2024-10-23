@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import { FaFacebookSquare, FaInstagram, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
+import { FaInstagram, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { FaSquareFacebook } from "react-icons/fa6";
 
@@ -37,7 +37,6 @@ function Header() {
     );
   };
 
-  // Função para alterar o estado do botão
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   }
@@ -46,9 +45,8 @@ function Header() {
     <header className={styles.header}>
       <div className={styles.container}>
 
-        {/* icone do menu hamburguer que aparece apenas em resuluçoes menores que 768px*/}
         <div className={styles.menuIcon} onClick={toggleMenu}>
-          { menuOpen ? <FaTimes/> : <FaBars/> }
+          {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
 
         <div className={styles.logo}>
@@ -83,7 +81,6 @@ function Header() {
           </button>
         </div>
 
-        {/** Menu mobile */}
         {menuOpen && (
           <div className={styles.mobileOnly}>
             <nav className={styles.navMobile}>
@@ -112,8 +109,8 @@ function Header() {
               </ul>
             </nav>
           </div>
-        )}  
-        
+        )}
+
         {showAlert && (
           <div className={styles.popup}>
             <div className={styles.popupContent}>
