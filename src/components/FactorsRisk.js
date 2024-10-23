@@ -1,5 +1,5 @@
 import React from "react";
-import Styles from "./FactorsRisk.module.css";  
+import styles from "./FactorsRisk.module.css";  
 
 const riskFactors = [
     {
@@ -37,11 +37,11 @@ const riskFactors = [
 const FactorsRisk = () => {
     return (
         <>
-            <h1 className={Styles.containerTitle}>Fatores de Risco</h1>
-            <section className={Styles.container}>
+            <h1 className={styles.containerTitle}>Fatores de Risco</h1>
+            <section className={styles.container}>
                 {riskFactors.map((factor, index) => (
-                    <div className={Styles.item} key={index}>
-                        <img className={Styles.imgBox} src={factor.img} alt={factor.alt} />
+                    <div className={styles.item} key={index}>
+                        <img className={styles.imgBox} src={factor.img} alt={factor.alt} />
                         <p>{factor.description}</p>
                     </div>
                 ))}

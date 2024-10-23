@@ -1,5 +1,5 @@
 import React from "react";
-import Style from "./Coments.module.css";
+import styles from "./Coments.module.css";
 
 const Coments = () => {
 
@@ -24,14 +24,14 @@ const Coments = () => {
     ]
 
     return (
-        <section className={Style.sectionComents}>
-            <div className={Style.comentsTitle}>
+        <section className={styles.sectionComents}>
+            <div className={styles.comentsTitle}>
                 <h1>DEPOIMENTOS</h1>
             </div>
-            <div className={Style.coments}>
+            <div className={styles.coments}>
                 {comentsData.map((coment, index) => (
-                    <div key={index} className={Style.comentWrapper}>
-                        <div className={Style.comentIframe}>
+                    <div key={index} className={styles.comentWrapper}>
+                        <div className={styles.comentIframe}>
                             <iframe
                                 src={coment.videoUrl}
                                 title={`YouTube video player ${index + 1}`}
@@ -39,8 +39,8 @@ const Coments = () => {
                                 allowFullScreen
                             ></iframe>
                         </div>
-                        <div className={Style.coment}>
-                            <p className={Style.comentText}>{coment.text}</p>
+                        <div className={styles.coment}>
+                            <p className={styles.comentText}>{coment.text}</p>
                         </div>
                     </div>
                 ))}
