@@ -7,14 +7,20 @@ import Slider from "./components/Slider";
 import Facts from "./components/Facts";
 import Cards from "./components/Cards";
 import Footer from "./components/Footer";
+import FactorsRisk from "./components/FactorsRisk";
+import SectionInfo from "./components/SectionInfo";
+import Coments from "./components/Coments";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Header />
     <Slider />
+    <SectionInfo />
     <Facts />
     <Cards />
+    <FactorsRisk />
+    <Coments />
     <Footer />
   </React.StrictMode>
 );

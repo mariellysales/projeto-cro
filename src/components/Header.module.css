@@ -93,15 +93,7 @@
   color: #25D366;
 }
 
-@media (max-width: 1367px) {
-  .container {
-    padding: 0px 50px;
-  }
-
-  .imageLogo {
-    height: 60px;
-  }
-
+@media (max-width: 1150px) {
   .navLi {
     padding: 25px;
   }

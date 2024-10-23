@@ -52,7 +52,7 @@ const Slider = () => {
               src={slide.image}
               alt={slide.id}
               className={styles.slideItem}
-              onClick={index === 0 ? openModal : undefined} // Abre o modal se for o primeiro slide
+              onClick={index === 0 ? openModal : undefined}
             />
           </SwiperSlide>
         ))}
@@ -60,8 +60,6 @@ const Slider = () => {
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <iframe
-          width="728"
-          height="410"
           src="https://www.youtube.com/embed/Zd8Rw004iXI?si=Js7D9xF_sK8v5iZJ"
           title="YouTube video player"
           frameborder="0"

@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import Style from "./Cards.module.css";
+import React from "react";
+import styles from "./Cards.module.css";
 
 const icons = [
   {
@@ -28,25 +28,20 @@ const icons = [
   },
 ];
 
-const Card = ({ imgSrc, name, onClick }) => (
+const Card = ({ imgSrc, name }) => (
   <li>
-    <div className={Style.cards} onClick={onClick}>
-      <img src={imgSrc} alt={name} className={Style.icons} />
+    <div className={styles.cards}>
+      <img src={imgSrc} alt={name} className={styles.icons} />
     </div>
-    <p className={Style.title}>{name}</p>
+    <p className={styles.title}>{name}</p>
   </li>
 );
 
 const Cards = () => {
-  const [selectedCard, setSelectedCard] = useState(null);
-
-  const handleCardClick = (index) => {
-    setSelectedCard(index === selectedCard ? null : index);
-  };
 
   return (
-    <section className={Style.sectionCard}>
-      <h1 className={Style.cardTitle}>Sintomas </h1>
+    <section className={styles.sectionCard}>
+      <h1 className={styles.cardTitle}>Sintomas </h1>
       <div>
         <ul>
           {icons.map((icon, index) => (
@@ -54,7 +49,6 @@ const Cards = () => {
               key={index}
               imgSrc={icon.imgSrc}
               name={icon.name}
-              onClick={() => handleCardClick(index)}
             />
           ))}
         </ul>
