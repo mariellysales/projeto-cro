@@ -6,12 +6,11 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 150px;
-  height: 150px;
+  width: 125px;
+  height: 125px;
   border: 1px solid #ccc;
   border-radius: 50%;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
 }
 
 ul {
@@ -27,7 +26,7 @@ ul li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 16px;
 }
 
 .icons {
@@ -37,9 +36,12 @@ ul li {
 }
 
 .cardTitle {
-  font-size: 35px;
-  text-align: center;
-  margin-top: 10px;
+  font-size: 2.5rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #6d131a;
+  margin: 0 0 40px;
+  text-transform: uppercase;
+  padding-left: 45%;
 }
 
 @media (max-width: 490px) {

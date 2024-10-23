@@ -8,6 +8,8 @@ import Facts from "./components/Facts";
 import Cards from "./components/Cards";
 import Coments from "./components/Coments";
 import SectionInfo from "./components/SectionInfo";
+import FactorsRisk from "./components/FactorsRisk";
+
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -15,6 +17,7 @@ root.render(
     <Header />
     <Slider />
     <SectionInfo />
+    <FactorsRisk />
     <Cards />
     <Facts />
     <Coments />

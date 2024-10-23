@@ -19,14 +19,16 @@
 .sectionText h3 {
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    color: #6d131a;
     margin-bottom: 16px;
 }
 
 .sectionText p {
     font-size: 18px;
     line-height: 1.6;
-    color: #555;
+    font-family: 'Montserrat', sans-serif;
+    color: #532d30;
 }
 
 .imgBanner {
@@ -36,4 +38,25 @@
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
 
+}
+
+@media (max-width: 400px) {
+    .sectionBanner {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px 10px;
+        margin-left: 30%;
+    }
+
+    .imgBanner {
+        width: 100%;
+    }
+
+    .sectionText p h3 {
+        font-size: 2em;
+        align-items: center;
+        justify-content: center;
+        font-family: 'Montserrat', sans-serif;
+        color: #6d131a;
+    }
 }

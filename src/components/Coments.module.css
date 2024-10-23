@@ -7,16 +7,6 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.comentsTitle {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.comentsTitle h1 {
-    font-size: 2em;
-    color: #333;
-}
-
 .coments {
     display: flex;
     flex-wrap: wrap;
@@ -56,4 +46,14 @@
     font-size: 1em;
     line-height: 1.5;
     color: #666;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.comentsTitle {
+    font-size: 1.8rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6d131a;
+    margin: 0 0 40px;
+    text-transform: uppercase;
+    padding-left: 40%;
 }
