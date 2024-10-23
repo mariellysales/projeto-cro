@@ -36,12 +36,13 @@ ul li {
 }
 
 .cardTitle {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-family: 'Montserrat', sans-serif;
   color: #6d131a;
   margin: 0 0 40px;
   text-transform: uppercase;
   padding-left: 45%;
+  padding-top: 2%;
 }
 
 @media (max-width: 490px) {

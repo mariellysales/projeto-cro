@@ -10,15 +10,15 @@ const Coments = () => {
            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            videoUrl: "https://www.youtube.com/embed/qXdSx0MAhxI?si=rXKxopL-1lFvT72u",
+            videoUrl: "https://www.youtube.com/embed/fdPNOW2Sa5U?si=gMwJhT_G6mTB64S6",
             text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
-            videoUrl: "https://www.youtube.com/embed/BJHkwbGvMfE?si=xLADpz4D3W6nQH9Y",
+            videoUrl: "https://www.youtube.com/embed/hthikbr2OEg?si=NTyMncBdbNy-Lcc3",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         },
         {
-            videoUrl: "https://www.youtube.com/embed/BJHkwbGvMfE?si=xLADpz4D3W6nQH9Y",
+            videoUrl: "https://www.youtube.com/embed/-tBIENS6uPE?si=YBX7rXtGI0GbEXv5https://www.youtube.com/embed/fdPNOW2Sa5U?si=gMwJhT_G6mTB64S6",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         }
     ]
