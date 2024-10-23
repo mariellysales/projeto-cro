@@ -1,6 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600&display=swap');
+
+/* Menu mobile */
+.menuIcon {
+  display: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #6d131a;
+}
+
+/* Fim menu mobile */
+
 .header {
-  background-color: #6d131a;
-  padding: 10px 0;
   color: white;
 }
 
@@ -9,12 +19,11 @@
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0px 100px;
 }
 
 .logo {
   flex: 0;
-  font-size: 30px;
 }
 
 .imageLogo {
@@ -23,8 +32,10 @@
 
 .nav {
   flex-grow: 1;
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
 
 .navUl {
   list-style: none;
@@ -36,24 +47,24 @@
 .navLi {
   display: inline;
   padding: 40px;
+  font-family: 'Ysabeau Office';
+  text-transform: uppercase;
 
 }
 
 .navLi:hover {
   padding: 40px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  background-color: #6d131a;
 }
 
 .navLink {
-  color: white;
   text-decoration: none;
-  font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s;
 }
 
-.navLink:hover {
-  color: #f1c40f;
+.navLi:hover .navLink {
+  color: white;
 }
 
 .socialIcons {
@@ -64,16 +75,25 @@
 .socialIcon {
   background: none;
   border: none;
-  padding: 0;
   cursor: pointer;
   display: inline-flex;
   align-items: center;
-  color: white;
-  font-size: 24px;
-  margin: 0 5px
+  font-size: 30px;
 }
 
-@media (max-width: 768px) {
+.socialIcon.facebook svg {
+  color: #3b5998;
+}
+
+.socialIcon.instagram {
+  color: #E1306C;
+}
+
+.socialIcon.whatsapp {
+  color: #25D366;
+}
+
+@media (max-width: 1150px) {
   .navLi {
     padding: 25px;
   }
@@ -82,11 +102,143 @@
     padding: 25px;
 
   }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+  .socialIcons {
+    margin-right: 6px;
+    font-size: 50px;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 5px;
+  }
+
+  .logo {
+    margin-bottom: 25px;
+  }
+
+  .socialIcon {
+    font-size: 30px;
+  }
+
+  .nav {
+    margin-bottom: 30px;
+  }
+
+  .navLi {
+    padding: 25px;
+  }
 }
 
 @media (max-width: 768px) {
+
+  /* Menu mobile */
+  .nav,
+  .socialIcons {
+    display: none;
+  }
+
+  .header {
+    height: 65px;
+  }
+
+  .mobileOnly {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50%;
+    background-color: white;
+    z-index: 10;
+    overflow-y: auto;
+  }
+
+  .menuIcon {
+    display: block;
+    position: absolute;
+    left: 20px;
+    top: 15px;
+    z-index: 20;
+  }
+
+  .logo {
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    transform: translateX(-50%);
+    z-index: 20;
+  }
+
+  .navMobile {
+    margin-top: 80px;
+  }
+
+  .navUlMobile {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+  }
+
+  .navLiMobile {
+    margin: 15px 0;
+  }
+
+  .navLiMobile:hover {
+    color: #6d131a;
+  }
+
+  .navLinkMobile {
+    color: #6d131a;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+  }
+
+  .navLinkMobile:hover {
+    color: #6d131a;
+  }
+
+  .socialIconsMobile {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+    justify-content: center;
+  }
+
+  .socialIconMobile {
+    font-size: 24px;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+
+  .socialIconMobile.facebook svg {
+    color: #3b5998;
+  }
+
+  .socialIconMobile.instagram {
+    color: #E1306C;
+  }
+
+  .socialIconMobile.whatsapp {
+    color: #25D366;
+  }
+
   .container {
+    display: flex;
     flex-direction: column;
+    padding: 0px 5px;
   }
 
   .nav {
@@ -94,7 +246,7 @@
   }
 
   .imageLogo {
-    height: 55px;
+    height: 50px;
   }
 
   .navUl {
@@ -104,17 +256,30 @@
   }
 
   .navLi {
-    display: inline;
-    padding: 10px;
+    padding: 15px;
   }
 
   .navLi:hover {
-    padding: 5px;
+    padding: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+
+  .navLink {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 530px) {
+  .navUl {
+    padding: 0px;
   }
 }
 
 @media (max-width: 400px) {
+  .navLi {
+    padding: 5px;
+  }
+
   .navLi:hover {
     padding: 13px;
     box-shadow: 0 4px 13px rgba(0, 0, 0, 0.3);
@@ -125,7 +290,7 @@
   }
 
   .socialIcons {
-    gap: 50px;
+    gap: 30px;
   }
 }
 
