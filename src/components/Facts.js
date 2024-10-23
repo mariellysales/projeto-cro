@@ -23,7 +23,7 @@ const factsData = [
 
 function Facts() {
     return (
-        <section className={styles.factsContainer}>
+        <section id="facts" className={styles.factsContainer}>
             <h1 className={styles.factsTitle}>Fatos sobre o câncer bucal</h1>
 
             <div className={styles.factsWrapper}>
