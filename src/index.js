@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import reportWebVitals from "./reportWebVitals";
 import Slider from "./components/Slider";
 import Facts from "./components/Facts";
-import Cards from "./components/Cards";
+import Symptoms from "./components/Symptoms";
 import Footer from "./components/Footer";
 import FactorsRisk from "./components/FactorsRisk";
 import SectionInfo from "./components/SectionInfo";
@@ -18,7 +18,7 @@ root.render(
     <Slider />
     <SectionInfo />
     <Facts />
-    <Cards />
+    <Symptoms />
     <FactorsRisk />
     <Coments />
     <Footer />

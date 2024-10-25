@@ -2,17 +2,21 @@
     padding: 20px;
     background-color: #f5f5f5;
     border-radius: 8px;
-    width: 1200px;
+    width: 100%;
+    /* Agora será 100% da largura da tela */
+    max-width: 900px;
+    /* Limita o tamanho máximo */
     margin: 0 auto;
+    margin-bottom: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .coments {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
-    gap: 20px;
+    gap: 5px;
 }
 
 .comentWrapper {
@@ -32,8 +36,8 @@
 }
 
 .comentIframe iframe {
-    width: 100%;
-    height: 250px;
+    width: 80%;
+    height: 150px;
     border: none;
 }
 
@@ -55,5 +59,43 @@
     color: #6d131a;
     margin: 0 0 40px;
     text-transform: uppercase;
-    padding-left: 40%;
+    text-align: center;
+    /* Melhorado para centralizar o título */
+}
+
+/* Estilos para telas de 400px ou menos */
+@media (max-width: 400px) {
+    .sectionComents {
+        padding: 10px;
+        /* Reduzido para dar mais espaço */
+    }
+
+    .coments {
+        flex-direction: column;
+    }
+
+    .comentWrapper {
+        flex: 1 1 100%;
+        /* Agora ocupa 100% da largura */
+        flex-direction: column;
+        padding: 0px;
+        margin-left: 0;
+    }
+
+    .comentsTitle {
+        font-size: 1.5rem;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .comentText {
+        font-size: 0.9em;
+    }
+
+    .comentIframe iframe {
+        width: 100%;
+        /* Iframe ajusta 100% da largura do container */
+        height: 150px;
+        /* Mantém a altura proporcional */
+    }
 }

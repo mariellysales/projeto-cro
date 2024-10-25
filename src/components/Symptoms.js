@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./Cards.module.css";
+import styles from "./Symptoms.module.css";
 
 const icons = [
   {
@@ -37,7 +37,7 @@ const Card = ({ imgSrc, name }) => (
   </li>
 );
 
-const Cards = () => {
+const Symptoms = () => {
 
   return (
     <section className={styles.sectionCard}>
@@ -57,4 +57,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Symptoms;
