@@ -1,14 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600&display=swap');
 
-/* Menu mobile */
 .menuIcon {
   display: none;
   cursor: pointer;
   font-size: 30px;
   color: #6d131a;
 }
-
-/* Fim menu mobile */
 
 .header {
   color: white;
@@ -47,7 +44,7 @@
 .navLi {
   display: inline;
   padding: 40px;
-  font-family: 'Ysabeau Office';
+  font-family: 'Montserrat', sans-serif;;
   text-transform: uppercase;
 
 }
@@ -61,6 +58,7 @@
   text-decoration: none;
   font-size: 20px;
   transition: color 0.3s;
+  color: black;
 }
 
 .navLi:hover .navLink {
@@ -139,8 +137,6 @@
 }
 
 @media (max-width: 768px) {
-
-  /* Menu mobile */
   .nav,
   .socialIcons {
     display: none;
