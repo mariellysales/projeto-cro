@@ -8,7 +8,7 @@
 
 .factsTitle {
     font-size: 2.5rem;
-    font-family: 'Montserrat', sans-serif;;;
+    font-family: 'Montserrat', sans-serif;
     color: #6d131a;
     margin: 0 0 40px;
     text-transform: uppercase;
@@ -49,7 +49,7 @@
     font-size: 25px;
     color: #555;
     margin-top: 10px;
-    font-family: 'Montserrat', sans-serif;;;
+    font-family: 'Montserrat', sans-serif;
 }
 
 @media (max-width: 1150px) {
