@@ -5,17 +5,14 @@
 .container {
     display: flex;
     justify-content: space-around;
-    /* Espaça os itens horizontalmente */
     align-items: center;
     padding: 0 100px;
-    /* Padding lateral */
 }
 
 .contact p {
     display: flex;
     align-items: center;
     margin: 10px 0;
-    /* Adiciona um espaço entre os parágrafos */
 }
 
 .contact p svg {
@@ -49,9 +46,9 @@
         height: 120px;
         margin-left: 5px;
     }
-  }
-  
-  @media (max-width: 768px) {
+}
+
+@media (max-width: 768px) {
     .imageLogo {
         height: 100px;
     }
@@ -60,13 +57,14 @@
         padding: 0 40px;
         flex-direction: column;
     }
-  }
-  
-  @media (max-width: 400px) {
+}
+
+@media (max-width: 400px) {
     .imageLogo {
         height: 60px;
     }
+
     .container {
         display: flex;
     }
-  }
+}
