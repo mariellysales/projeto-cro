@@ -37,7 +37,31 @@
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease-in-out;
+}
 
+@media (max-width: 768px) {
+    .sectionBanner {
+        flex-direction: column;
+        gap: 20px;
+        padding: 40px 15px;
+    }
+
+    .imgBanner {
+        width: 300px;
+    }
+
+    .sectionText {
+        text-align: center;
+        max-width: 90%;
+    }
+
+    .sectionText h3 {
+        font-size: 24px;
+    }
+
+    .sectionText p {
+        font-size: 16px;
+    }
 }
 
 @media (max-width: 400px) {
@@ -45,18 +69,23 @@
         flex-direction: column;
         gap: 10px;
         padding: 20px 10px;
-        margin-left: 30%;
     }
 
     .imgBanner {
-        width: 100%;
+        width: 80%;
+        margin-left: 10%;
     }
 
-    .sectionText p h3 {
-        font-size: 2em;
-        align-items: center;
-        justify-content: center;
-        font-family: 'Montserrat', sans-serif;
-        color: #6d131a;
+    .sectionText {
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .sectionText h3 {
+        font-size: 20px;
+    }
+
+    .sectionText p {
+        font-size: 14px;
     }
 }

@@ -17,10 +17,6 @@ const Coments = () => {
             videoUrl: "https://www.youtube.com/embed/hthikbr2OEg?si=NTyMncBdbNy-Lcc3",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         },
-        {
-            videoUrl: "https://www.youtube.com/embed/-tBIENS6uPE?si=YBX7rXtGI0GbEXv5https://www.youtube.com/embed/fdPNOW2Sa5U?si=gMwJhT_G6mTB64S6",
-            text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-        }
     ]
 
     return (

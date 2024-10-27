@@ -9,8 +9,9 @@
 }
 
 .item {
-    background-color: #6d131a;
-    color: white;
+    background-color: white;
+    border: #6d131a 2px solid;
+    color: #6d131a;
     padding: 15px;
     border-radius: 8px;
     text-align: center;
@@ -35,4 +36,42 @@
     text-align: center;
     margin-bottom: 5px;
     text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 20px;
+    }
+
+    .containerTitle {
+        font-size: 1.8rem;
+    }
+
+    .item {
+        padding: 10px;
+    }
+
+    .imgBox {
+        height: 120px;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        grid-template-columns: 1fr;
+        padding: 10px;
+    }
+
+    .containerTitle {
+        font-size: 1.5rem;
+    }
+
+    .item {
+        padding: 8px;
+    }
+
+    .imgBox {
+        height: 100px;
+    }
 }
