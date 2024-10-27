@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./Footer.module.css";
-import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaWhatsapp, FaClock, FaRegClock } from 'react-icons/fa';
+import { FaMapMarkerAlt, FaEnvelope, FaPhone, FaWhatsapp, FaRegClock } from 'react-icons/fa';
 
 function Footer() {
     return (
