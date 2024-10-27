@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600&display=swap');
 
+body {
+  padding-top: 100px;
+}
+
 .menuIcon {
   display: none;
   cursor: pointer;
@@ -8,6 +12,12 @@
 }
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: white;
   color: white;
 }
 
@@ -33,7 +43,6 @@
   justify-content: center;
 }
 
-
 .navUl {
   list-style: none;
   padding: 0;
@@ -43,22 +52,26 @@
 
 .navLi {
   display: inline;
-  padding: 40px;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
-
 }
 
-.navLi:hover {
-  padding: 40px;
+.navBlock {
+  padding: 35px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.navLi:hover .navBlock {
   background-color: #6d131a;
 }
 
 .navLink {
   text-decoration: none;
-  font-size: 20px;
+  font-size: 25px;
   transition: color 0.3s;
   color: black;
+  cursor: pointer;
 }
 
 .navLi:hover .navLink {
@@ -91,14 +104,32 @@
   color: #25D366;
 }
 
-@media (max-width: 1150px) {
-  .navLi {
-    padding: 25px;
+@media (max-width: 1460px) {
+  .container {
+    padding: 10px 60px;
   }
 
-  .navLi:hover {
-    padding: 25px;
+  .logo {
+    height: 70px;
+  }
 
+  .navBlock {
+    padding: 30px;
+  }
+
+  .navLink {
+    font-size: 18px;
+  }
+
+}
+
+@media (max-width: 1170px) {
+  .logo {
+    height: 79px;
+  }
+
+  .navBlock {
+    padding: 25px;
   }
 
   .navLink {
@@ -112,15 +143,25 @@
   }
 }
 
-@media (max-width: 1024px) {
+
+
+@media (max-width: 1127px) {
   .container {
     display: flex;
     flex-direction: column;
     padding: 0px 5px;
   }
 
-  .logo {
-    margin-bottom: 25px;
+  .navBlock {
+    padding: 35px;
+  }
+
+  .navLink {
+    font-size: 20px;
+  }
+
+  .imagelogo {
+    height: 25px;
   }
 
   .socialIcon {
@@ -128,15 +169,15 @@
   }
 
   .nav {
-    margin-bottom: 30px;
-  }
-
-  .navLi {
-    padding: 25px;
+    margin-bottom: 10px;
   }
 }
 
 @media (max-width: 768px) {
+  body {
+    padding-top: 70px;
+  }
+
   .nav,
   .socialIcons {
     display: none;
@@ -148,11 +189,11 @@
 
   .mobileOnly {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 50%;
+    height: 40%;
     background-color: white;
     z-index: 10;
     overflow-y: auto;
@@ -185,16 +226,17 @@
     display: block;
   }
 
-  .navLiMobile {
-    margin: 15px 0;
+  .navBlock {
+    padding: 5px;
   }
 
-  .navLiMobile:hover {
-    color: #6d131a;
+  .navBlock:hover {
+    color: white;
+    background-color: #6d131a;
   }
 
   .navLinkMobile {
-    color: #6d131a;
+    color: black;
     text-decoration: none;
     font-size: 20px;
     transition: color 0.3s;
@@ -243,6 +285,7 @@
 
   .imageLogo {
     height: 50px;
+    margin-bottom: 10px;
   }
 
   .navUl {
