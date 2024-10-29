@@ -10,22 +10,21 @@ import Footer from "./components/Footer";
 import FactorsRisk from "./components/FactorsRisk";
 import SectionInfo from "./components/SectionInfo";
 import Coments from "./components/Coments";
+import SelfExam from "./components/SelfExam";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <Header />
-    <Slider />
-    <SectionInfo />
-    <Facts />
-    <Symptoms />
-    <FactorsRisk />
-    <Coments />
-    <Footer />
+    <div id="início"><Slider /></div>
+    <div id="conhecimento"><SectionInfo /></div>
+    <div id="autoexame"><SelfExam /></div>
+    <div id="dados"><Facts /></div>
+    <div id="depoimentos"><Coments /></div>
+    <div id="sintomas"><Symptoms /></div>
+    <div id="factorsRisk"><FactorsRisk /></div>
+    <div id="footer"><Footer /></div>
   </React.StrictMode>
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();

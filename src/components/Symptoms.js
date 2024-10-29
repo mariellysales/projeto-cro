@@ -4,27 +4,27 @@ import styles from "./Symptoms.module.css";
 const icons = [
   {
     name: "Feridas Persistentes",
-    imgSrc: "/images/feridasPersistentes.png",
+    imgSrc: "/images/sintomas/feridasPersistentes.jpg",
   },
   {
     name: "Manchas Vermelhas ou Brancas",
-    imgSrc: "/images/manchasVermelhas.png",
+    imgSrc: "/images/sintomas/manchasVermelhas.jpg",
   },
   {
     name: "Inchaço ou Nódulos",
-    imgSrc: "/images/inchaco.jpg",
+    imgSrc: "/images/sintomas/inchaco.jpg",
   },
   {
     name: "Dificuldade para Comer ou Mastigar",
-    imgSrc: "/images/dificuldadeComer.jpg",
+    imgSrc: "/images/sintomas/dificuldadeComer.jpg",
   },
   {
     name: "Dores Persistentes",
-    imgSrc: "/images/dorPersistente.jpg",
+    imgSrc: "/images/sintomas/dorPersistente.jpg",
   },
   {
     name: "Perda de peso inexplicada",
-    imgSrc: "/images/perdaPeso.jpg",
+    imgSrc: "/images/sintomas/perdaPeso.jpg",
   },
 ];
 
@@ -41,7 +41,7 @@ const Symptoms = () => {
 
   return (
     <section className={styles.sectionCard}>
-      <h1 className={styles.cardTitle}>Sintomas </h1>
+      <h1 className={styles.cardTitle}>SINAIS E SINTOMAS </h1>
       <div>
         <ul>
           {icons.map((icon, index) => (

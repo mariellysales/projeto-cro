@@ -6,7 +6,7 @@ const SectionInfo = () => {
         <section className={styles.sectionBanner}>
             <div className={styles.sectionText}>
                 <h3 className={styles.sectionH}>O QUE É O CÂNCER BUCAL?</h3>
-                <p>O câncer de boca, também conhecido como câncer oral, é uma doença maligna que afeta as estruturas da cavidade bucal, incluindo lábios, gengivas, bochechas, língua, piso da boca, céu da boca e garganta. Este tipo de câncer pode se desenvolver a partir de células epiteliais presentes nas mucosas bucais e, se não tratado adequadamente, pode se espalhar para outras partes do corpo.</p>
+                <p>O câncer é o principal problema de saúde pública no mundo, figurando como uma das principais causas de morte. O câncer é uma neoplasia maligna cuja células anormais se dividem incontrolavelmente e se espalham por um tecido ou órgão. Tem como principal característica infiltrar tecidos e causar destruições locais, podendo se espalhar para o corpo todo, o que chamamos de metástases.</p>
 
             </div>
             <div>
