@@ -1,0 +1,48 @@
+.contactSection {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 280px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.awarenessButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 10px solid #6d131a;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  border-radius: 50%;
+  transition: border-color 0.5s ease, background-color 0.5s ease;
+  overflow: hidden;
+}
+
+.frontIcon,
+.backIcon {
+  font-size: 150px;
+  color: #6d131a;
+}
+
+.icon {
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  font-size: 30px;
+  color: #6d131a;
+  text-align: center;
+  margin-top: 10px;
+}
