@@ -3,7 +3,6 @@ import styles from './Contact.module.css';
 import { MdOutlineEmail, MdEmail } from "react-icons/md";
 import { BsClipboard, BsClipboardCheck } from "react-icons/bs";
 import { FaUserInjured, FaUserCheck } from "react-icons/fa";
-import { Link } from "react-router-dom";
 
 function Contact() {
   return (
