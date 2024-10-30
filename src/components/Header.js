@@ -5,7 +5,7 @@ import { FaSquareFacebook } from "react-icons/fa6";
 import { Link } from "react-scroll";
 
 function Header() {
-  const currentUrl = "https://www.youtube.com/watch?v=-wrsG0IGc-M&list=PLnDvRpP8BneyVA0SZ2okm-QBojomniQVO&index=4";
+  const currentUrl = window.location.href;
   const [showAlert, setShowAlert] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
