@@ -17,8 +17,7 @@
 .factsWrapper {
     display: flex;
     justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
+    gap: 160px;
 }
 
 .factBox {
@@ -27,7 +26,6 @@
     flex: 1;
     max-width: 300px;
     display: inline-block;
-    margin: 0 90px;
 }
 
 .factImage {
@@ -53,24 +51,57 @@
 }
 
 @media (max-width: 1150px) {
+    .factsTitle {
+        font-size: 30px;
+    }
+
+    .factsWrapper {
+        gap: 50px;
+    }
+
+    .factBox {
+        padding: 0px;
+        margin: 15px;
+    }
+
     .factImage {
-        max-height: 180px;
+        max-height: 140px;
+    }
+
+    .factText {
+        font-size: 20px;
     }
 }
 
 @media (max-width: 768px) {
+    .factsTitle {
+        font-size: 25px;
+    }
+
+    .factsWrapper {
+        gap: 0px;
+    }
+
     .factImage {
-        max-height: 150px;
+        max-height: 120px;
         max-width: 100%;
+    }
+
+    .factText {
+        font-size: 15px;
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 450px) {
     .factBox {
         margin: 0px;
     }
 
     .factImage {
-        max-height: 150px;
+        max-height: 100px;
+    }
+
+    .factText {
+        font-size: 12px;
     }
 }
