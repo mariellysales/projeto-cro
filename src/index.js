@@ -19,7 +19,6 @@ root.render(
     <Header />
     <div id="início"><Slider /></div>
     <div id="conhecimento"><SectionInfo /></div>
-    <div id="autoexame"><SelfExam /></div>
     <div id="dados"><Facts /></div>
     <div id="sintomas"><Symptoms /></div>
     <div id="factorsRisk"><FactorsRisk /></div>
