@@ -3,6 +3,7 @@ import styles from './Contact.module.css';
 import { MdOutlineEmail, MdEmail } from "react-icons/md";
 import { BsClipboard, BsClipboardCheck } from "react-icons/bs";
 import { FaUserInjured, FaUserCheck } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Contact() {
   return (
@@ -25,17 +26,20 @@ function Contact() {
         </div>
 
         <div className={styles.buttonContainer}>
-          <div className={styles.awarenessButton}>
-            <div className={styles.front}>
-              <BsClipboard className={styles.frontIcon} />
+          <Link to="/self-exam">
+            <div className={styles.awarenessButton}>
+              <div className={styles.front}>
+                <BsClipboard className={styles.frontIcon} />
+              </div>
+              <div className={styles.back}>
+                <BsClipboardCheck className={styles.backIcon} />
+              </div>
             </div>
-            <div className={styles.back}>
-              <BsClipboardCheck className={styles.backIcon} />
+            
+            <div className={styles.icon}>
+              <p>Autoexame</p>
             </div>
-          </div>
-          <div className={styles.icon}>
-            <p>Autoexame</p>
-          </div>
+          </Link>
         </div>
 
         <div className={styles.buttonContainer}>
