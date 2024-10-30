@@ -37,7 +37,7 @@ function Contact() {
             </div>
           </Link>  
             <div className={styles.icon}>
-              <p>Autoexame</p>
+              <p>AUTO EXAME</p>
             </div>
         </div>
 
