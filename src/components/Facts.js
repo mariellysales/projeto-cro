@@ -11,13 +11,13 @@ const factsData = [
         id: 2,
         imgSrc: "/images/brazil.png",
         alt: "Gráfico mostrando casos de câncer bucal no Brasil",
-        text: "Aproximadamente 15.100 casos de câncer bucal no Brasil nos últimos 3 anos"
+        text: "15.100 casos de câncer de boca no Brasil nos últimos 3 anos."
     },
     {
         id: 3,
         imgSrc: "/images/tape.png",
         alt: "Gráfico mostrando mortes por câncer bucal mundialmente",
-        text: "O câncer bucal foi responsável por cerca de 6.192 mortes em 2020 no Brasil"
+        text: "6.192 óbitos em 2020 no Brasil por câncer de boca."
     }
 ];
 

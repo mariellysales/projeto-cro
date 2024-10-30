@@ -35,11 +35,10 @@ function Contact() {
                 <BsClipboardCheck className={styles.backIcon} />
               </div>
             </div>
-            
+          </Link>  
             <div className={styles.icon}>
               <p>Autoexame</p>
             </div>
-          </Link>
         </div>
 
         <div className={styles.buttonContainer}>

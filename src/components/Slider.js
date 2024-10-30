@@ -57,7 +57,7 @@ const Slider = () => {
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <iframe
-          src="https://www.youtube.com/embed/dQXdVm2SI14?si=viKxkWqra8EfNkbQ"
+          src="https://www.youtube.com/embed/RPY26UGsxLc?si=WyrmHcTWEo9TwuVn"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
