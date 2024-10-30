@@ -25,7 +25,7 @@ const SelfExam = () => {
     return (
         <section className={style.selfExamContainer}>
             <h2 className={style.examTitle}>AUTO EXAME</h2>
-            <p>As regiões anatômicas mais comum para o câncer de boca são bordas de língua e em sua região inferior, assoalho de boca, lábios inferiores e palato/céu da boca.
+            <p className={style.pExam}>As regiões anatômicas mais comum para o câncer de boca são bordas de língua e em sua região inferior, assoalho de boca, lábios inferiores e palato/céu da boca.
             A estratégia de detecção precoce para o câncer de boca recomendada no Brasil é o diagnóstico precoce das lesões suspeitas. Faça esse exame intraoral pelo menos uma vez ao mês. Siga o passo a passo das fotografias abaixo, dura somente 1 minuto e meio!</p>
             <div className={style.containerExam}>
                 {imgExam.map((imgExams, index) => (

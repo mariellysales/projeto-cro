@@ -10,7 +10,7 @@ const SectionInfo = () => {
 
             </div>
             <div>
-             <img className={styles.imgBanner} src="images/mouthSick.png" alt="logo" />
+             <img className={styles.imgBanner} src="/images/sectionInfo/mouthSick.jpeg" alt="Boca com possível inicio de cancer bucal" />
             </div>
         </section>
     );

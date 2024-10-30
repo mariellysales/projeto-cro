@@ -3,6 +3,13 @@
     text-align: center;
 }
 
+.pExam {
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Montserrat', sans-serif;
+    color: #532d30;
+}
+
 .examTitle {
     font-size: 2rem;
     font-family: 'Montserrat', sans-serif;
