@@ -29,7 +29,7 @@ const icons = [
 ];
 
 const Card = ({ imgSrc, name }) => (
-  <li>
+  <li className={styles.liStyle}>
     <div className={styles.cards}>
       <img src={imgSrc} alt={name} className={styles.icons} />
     </div>
@@ -43,7 +43,7 @@ const Symptoms = () => {
     <section className={styles.sectionCard}>
       <h1 className={styles.cardTitle}>SINAIS E SINTOMAS </h1>
       <div>
-        <ul>
+        <ul className={styles.ulStyle}>
           {icons.map((icon, index) => (
             <Card
               key={index}

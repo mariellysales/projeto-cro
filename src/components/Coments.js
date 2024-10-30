@@ -6,7 +6,7 @@ const Coments = () => {
 
     const comentsData = [
         { 
-            videoUrl: "https://www.youtube.com/embed/dQXdVm2SI14?si=viKxkWqra8EfNkbQ",
+            videoUrl: "https://www.youtube.com/embed/RPY26UGsxLc?si=WyrmHcTWEo9TwuVn",
            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {

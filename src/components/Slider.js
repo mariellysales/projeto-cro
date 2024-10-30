@@ -15,18 +15,15 @@ const Slider = () => {
   const slides = [
     {
       id: "1",
-      image:
-        "/images/banner/banner2.jpg",
+      image: "/images/banner/banner-video.png", // Imagem do vídeo
     },
     {
       id: "2",
-      image:
-        "/images/banner/banner1.jpg",
+      image: "/images/banner/banner2.jpg",
     },
     {
       id: "3",
-      image:
-        "/images/banner/banner3.jpg",
+      image: "/images/banner/banner3.jpg",
     },
   ];
 
@@ -52,7 +49,7 @@ const Slider = () => {
               src={slide.image}
               alt={slide.id}
               className={styles.slideItem}
-              onClick={index === 0 ? openModal : undefined}
+              onClick={index === 0 ? openModal : undefined} 
             />
           </SwiperSlide>
         ))}
@@ -60,9 +57,8 @@ const Slider = () => {
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <iframe
-          src="https://www.youtube.com/embed/Zd8Rw004iXI?si=Js7D9xF_sK8v5iZJ"
+          src="https://www.youtube.com/embed/RPY26UGsxLc?si=WyrmHcTWEo9TwuVn"
           title="YouTube video player"
-          frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>

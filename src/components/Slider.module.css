@@ -9,10 +9,11 @@ iframe {
   width: 98vw;
 }
 
-@media (max-width: 1150px) {
-  .slide-item {
-    height: 100%;
+@media (max-width: 768px) {
+  .slideItem {
+    height: 300px;
     width: 100%;
+    overflow: hidden;
   }
 
   iframe {
@@ -22,13 +23,9 @@ iframe {
 }
 
 @media (max-width: 400px) {
-  .container-swiper {
-    height: 200px;
-    width: 100%;
-  }
 
-  .slide-item {
-    height: 100%;
+  .slideItem {
+    height: 200px;
     width: 100%;
   }
 
