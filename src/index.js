@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import FactorsRisk from "./components/FactorsRisk";
 import SectionInfo from "./components/SectionInfo";
 import Coments from "./components/Coments";
+import SelfExam from "./components/SelfExam";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -17,6 +18,7 @@ root.render(
     <Header />
     <div id="início"><Slider /></div>
     <div id="conhecimento"><SectionInfo /></div>
+    <div id="autoexame"><SelfExam /></div>
     <div id="dados"><Facts /></div>
     <div id="depoimentos"><Coments /></div>
     <div id="sintomas"><Symptoms /></div>

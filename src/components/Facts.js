@@ -5,19 +5,19 @@ const factsData = [
         id: 1,
         imgSrc: "/images/world.png",
         alt: "Gráfico mostrando casos de câncer bucal globalmente",
-        text: "Aproximadamente 380 mil novos casos de câncer bucal são diagnosticados a cada ano no mundo"
+        text: "380.000 novos casos de câncer bucal no mundo por ano"
     },
     {
         id: 2,
         imgSrc: "/images/brazil.png",
         alt: "Gráfico mostrando casos de câncer bucal no Brasil",
-        text: "Aproximadamente 15.190 novos casos de câncer bucal são diagnosticados a cada ano no Brasil"
+        text: "15.100 casos de câncer de boca no Brasil nos últimos 3 anos."
     },
     {
         id: 3,
         imgSrc: "/images/tape.png",
         alt: "Gráfico mostrando mortes por câncer bucal mundialmente",
-        text: "O câncer bucal é responsável por cerca de 177.000 mortes por ano mundialmente"
+        text: "6.192 óbitos em 2020 no Brasil por câncer de boca."
     }
 ];
 

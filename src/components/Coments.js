@@ -6,15 +6,15 @@ const Coments = () => {
 
     const comentsData = [
         { 
-            videoUrl: "https://www.youtube.com/embed/d_SkspNUE5E?si=jgwwwW9lBJrf1eYp",
+            videoUrl: "https://www.youtube.com/embed/dQXdVm2SI14?si=viKxkWqra8EfNkbQ",
            text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
         },
         {
-            videoUrl: "https://www.youtube.com/embed/fdPNOW2Sa5U?si=gMwJhT_G6mTB64S6",
+            videoUrl: "https://www.youtube.com/embed/DJoa1p5v2tI?si=q3BjhiM7j148QTpf",
             text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         },
         {
-            videoUrl: "https://www.youtube.com/embed/hthikbr2OEg?si=NTyMncBdbNy-Lcc3",
+            videoUrl: "https://www.youtube.com/embed/_7d0bPOAe4Q?si=jEDbitWpi3qcJ1Tw",
             text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
         },
     ]

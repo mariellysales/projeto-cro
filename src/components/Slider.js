@@ -16,17 +16,17 @@ const Slider = () => {
     {
       id: "1",
       image:
-        "https://thumbs.dreamstime.com/b/dente-bonito-da-escova-do-dentista-dos-desenhos-animados-79369587.jpg",
+        "/images/banner/banner2.jpg",
     },
     {
       id: "2",
       image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcReDzi5n-VCOQIGnwptfNCqb8SsCwaqtI5qLQ&s",
+        "/images/banner/banner1.jpg",
     },
     {
       id: "3",
       image:
-        "https://static.vecteezy.com/ti/vetor-gratis/p1/11152652-icone-do-logotipo-do-dente-e-linha-para-texto-para-modelo-de-design-de-atendimento-odontologico-de-dentista-ou-estomatologia-simbolo-de-dente-de-contorno-de-linha-preta-isoladoial-para-clinica-odontologica-ou-centro-medico-de-odontologia-e-creme-dental-vetor.jpg",
+        "/images/banner/banner3.jpg",
     },
   ];
 
@@ -42,7 +42,7 @@ const Slider = () => {
         pagination={{ clickable: true }}
         loop={true}
         autoplay={{
-          delay: 3000,
+          delay: 4000,
           disableOnInteraction: false,
         }}
       >
