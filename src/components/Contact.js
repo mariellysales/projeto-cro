@@ -26,7 +26,6 @@ function Contact() {
         </div>
 
         <div className={styles.buttonContainer}>
-          <Link to="/self-exam">
             <div className={styles.awarenessButton}>
               <div className={styles.front}>
                 <BsClipboard className={styles.frontIcon} />
@@ -35,7 +34,6 @@ function Contact() {
                 <BsClipboardCheck className={styles.backIcon} />
               </div>
             </div>
-          </Link>  
             <div className={styles.icon}>
               <p>AUTO EXAME</p>
             </div>
