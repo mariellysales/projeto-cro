@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import FactorsRisk from "./components/FactorsRisk";
 import SectionInfo from "./components/SectionInfo";
 import Coments from "./components/Coments";
+import Contact from "./components/Contact";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -19,8 +20,9 @@ root.render(
     <div id="conhecimento"><SectionInfo /></div>
     <div id="dados"><Facts /></div>
     <div id="depoimentos"><Coments /></div>
-    <div id="sintomas"><Cards /></div>
+    <div id="sintomas"><Symptoms /></div>
     <div id="factorsRisk"><FactorsRisk /></div>
+    <div id="Contact"><Contact /></div>
     <div id="footer"><Footer /></div>
   </React.StrictMode>
 );
