@@ -21,10 +21,10 @@ root.render(
     <div id="conhecimento"><SectionInfo /></div>
     <div id="autoexame"><SelfExam /></div>
     <div id="dados"><Facts /></div>
-    <div id="depoimentos"><Coments /></div>
     <div id="sintomas"><Symptoms /></div>
     <div id="factorsRisk"><FactorsRisk /></div>
     <div id="selfExam"><SelfExam /></div>
+    <div id="depoimentos"><Coments /></div>
     <div id="Contact"><Contact /></div>
     <div id="footer"><Footer /></div>
   </React.StrictMode>
