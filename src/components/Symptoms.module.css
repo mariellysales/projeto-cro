@@ -1,24 +1,37 @@
 .sectionCard {
   padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.cardTitle {
+  font-size: 2rem;
+  font-family: 'Montserrat', sans-serif;
+  color: #6d131a;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 40px 0;
 }
 
 .cards {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 125px;
-  height: 125px;
+  width: 150px;
+  height: 150px;
   border: 1px solid #ccc;
   border-radius: 50%;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 ul {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 20px;
-  justify-content: center;
+  justify-items: center;
   padding: 0;
+  margin: 0;
 }
 
 ul li {
@@ -33,26 +46,50 @@ ul li {
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  object-fit: cover;
 }
 
-.cardTitle {
-  font-size: 2rem;
-  font-family: 'Montserrat', sans-serif;
-  color: #6d131a;
-  margin: 0 0 40px;
-  text-transform: uppercase;
-  padding-left: 45%;
-  padding-top: 2%;
-}
+@media (max-width: 768px) {
+  ul {
+    grid-template-columns: repeat(3, 1fr);
+    /* 3 colunas para 768px */
+  }
 
-@media (max-width: 490px) {
   .cards {
-    width: 6vh;
-    height: 6vh;
+    width: 120px;
+    height: 120px;
+  }
+
+  .cardTitle {
+    font-size: 1.8rem;
   }
 
   .title {
-    font-size: 0.5em;
+    font-size: 0.9em;
     margin-top: 10px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  ul {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 colunas para telas pequenas */
+  }
+
+  .cards {
+    width: 15vh;
+    height: 15vh;
+  }
+
+  .title {
+    font-size: 0.8em;
+    margin-top: 10px;
+    text-align: center;
+  }
+
+  .cardTitle {
+    font-size: 1.5rem;
+    margin-top: 5px;
   }
 }

@@ -3,32 +3,32 @@ import styles from "./FactorsRisk.module.css";
 
 const riskFactors = [
     {
-        img: "/images/alcoolismo.jpg",
+        img: "/images/fatoresRisco/alcoolismo.jpg",
         alt: "Álcool",
         description: "Consumo elevado e frequente de bebidas alcoólicas",
     },
     {
-        img: "/images/tabagismo.jpg",
+        img: "/images/fatoresRisco/tabagismo.jpg",
         alt: "Tabaco",
         description: "Uso de cigarros, charutos ou produtos de tabaco",
     },
     {
-        img: "/images/dietaPobre.jpg",
+        img: "/images/fatoresRisco/dietaPobre.jpg",
         alt: "Dieta pobre",
         description: "Baixa ingestão de frutas e vegetais",
     },
     {
-        img: "/images/dna.jpg",
-        alt: "DNA",
+        img: "/images/fatoresRisco/DNAcancer.jpg",
+        alt: "DNA com câncer",
         description: "Antecedentes familiares que tiveram câncer",
     },
     {
-        img: "/images/HPV.jpg",
+        img: "/images/fatoresRisco/HPV.jpg",
         alt: "HPV",
         description: "Certas cepas do vírus HPV estão associadas ao câncer oral",
     },
     {
-        img: "/images/sol.jpg",
+        img: "/images/fatoresRisco/exposicaoSol.jpg",
         alt: "Sol",
         description: "Exposição ao Sol, principalmente para os lábios",
     }

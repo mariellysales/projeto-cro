@@ -5,7 +5,7 @@ const factsData = [
         id: 1,
         imgSrc: "/images/world.png",
         alt: "Gráfico mostrando casos de câncer bucal globalmente",
-        text: "Aproximadamente 380 mil novos casos de câncer bucal são diagnosticados a cada ano no mundo"
+        text: "380.000 novos casos de câncer bucal no mundo por ano"
     },
     {
         id: 2,
