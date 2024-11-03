@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Ysabeau+Office:wght@400;600&display=swap');
 
 body {
-  padding-top: 100px;
+  padding-top: 85px;
 }
 
 .menuIcon {
@@ -21,7 +21,7 @@ body {
   color: white;
 }
 
-.container {
+.headerContainer {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 }
 
 .imageLogo {
-  height: 80px;
+  height: 70px;
 }
 
 .nav {
@@ -44,22 +44,21 @@ body {
 }
 
 .navUl {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: inline-block;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
 }
 
+
 .navLi {
-  display: inline;
+  display: flex;
   font-family: 'Montserrat', sans-serif;
   text-transform: uppercase;
+  justify-content: center;
 }
 
 .navBlock {
-  padding: 35px;
-  cursor: pointer;
-  display: inline-block;
+    padding: 35px;
 }
 
 .navLi:hover .navBlock {
@@ -68,7 +67,7 @@ body {
 
 .navLink {
   text-decoration: none;
-  font-size: 25px;
+  font-size: 12px;
   transition: color 0.3s;
   color: black;
   cursor: pointer;
@@ -105,12 +104,15 @@ body {
 }
 
 @media (max-width: 1460px) {
-  .container {
-    padding: 10px 60px;
+  body {
+    padding-top: 70px;
+  }
+  .headerContainer {
+    padding: 0px 70px;
   }
 
-  .logo {
-    height: 70px;
+  .imageLogo {
+    height: 50px;
   }
 
   .navBlock {
@@ -118,14 +120,22 @@ body {
   }
 
   .navLink {
-    font-size: 18px;
+    font-size: 10px;
+  }
+
+  .socialIcons {
+    gap: 5px;
+  }
+
+  .socialIcon {
+    font-size: 20px;
   }
 
 }
 
 @media (max-width: 1170px) {
-  .logo {
-    height: 79px;
+  body {
+    padding-top: 60px;
   }
 
   .navBlock {
@@ -133,31 +143,29 @@ body {
   }
 
   .navLink {
-    font-size: 18px;
-  }
-
-  .socialIcons {
-    margin-right: 6px;
-    font-size: 50px;
-    gap: 10px;
+    font-size: 10px;
   }
 }
 
 
 
 @media (max-width: 1127px) {
-  .container {
-    display: flex;
+  body {
+    padding-top: 160px;
+}
+
+  .headerContainer {
+    padding: 0px 50px;
     flex-direction: column;
-    padding: 0px 5px;
+    gap: 5px;
   }
 
   .navBlock {
-    padding: 35px;
+    padding: 20px;
   }
 
   .navLink {
-    font-size: 20px;
+    font-size: 10px;
   }
 
   .imagelogo {
@@ -273,7 +281,7 @@ body {
     color: #25D366;
   }
 
-  .container {
+  .headerContainer {
     display: flex;
     flex-direction: column;
     padding: 0px 5px;
