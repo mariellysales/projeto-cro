@@ -27,7 +27,7 @@
 }
 
 .imageLogo {
-    height: 140px;
+    height: 115px;
 }
 
 .link:hover {
@@ -43,28 +43,39 @@
 
 @media (max-width: 1150px) {
     .imageLogo {
-        height: 120px;
+        height: 70px;
         margin-left: 5px;
-    }
-}
-
-@media (max-width: 768px) {
-    .imageLogo {
-        height: 100px;
     }
 
     .container {
         padding: 0 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
         flex-direction: column;
+    }
+
+    .information {
+        font-size: 15px;
     }
 }
 
 @media (max-width: 400px) {
+    .contact p svg {
+        font-size: 15px;
+    }
+    
     .imageLogo {
         height: 60px;
     }
 
     .container {
         display: flex;
+    }
+
+    .information {
+        font-size: 15px;
     }
 }
