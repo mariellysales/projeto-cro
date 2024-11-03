@@ -37,7 +37,7 @@ function Header() {
 
   return (
     <header className={styles.header}>
-      <div className={styles.container}>
+      <div className={styles.headerContainer}>
         <div className={styles.menuIcon} onClick={toggleMenu}>
           {menuOpen ? <FaTimes /> : <FaBars />}
         </div>
@@ -48,14 +48,14 @@ function Header() {
 
         <nav className={styles.nav}>
           <ul className={styles.navUl}>
-            {["Início", "Conhecimento", "Sintomas", "Depoimentos"].map((item, index) => (
+            {["Início", "Conhecimento", "Sintomas", "Auto exame", "Depoimentos", "Fatores de Risco"].map((item, index) => (
               <li className={styles.navLi} key={index}>
                 <Link
                   className={styles.navLink}
-                  to={item.toLowerCase()}
+                  to={item.toLowerCase().replace(/\s+/g, '')}
                   smooth={true}
                   duration={500}
-                  offset={-70}
+                  offset={-80}
                 >
                   <div className={styles.navBlock}>
                     {item}
@@ -82,11 +82,11 @@ function Header() {
           <div className={styles.mobileOnly}>
             <nav className={styles.navMobile}>
               <ul className={styles.navUlMobile}>
-                {["Início", "Conhecimento", "Sintomas", "Depoimentos"].map((item, index) => (
+                {["Início", "Conhecimento", "Sintomas", "Auto exame", "Depoimentos", "Fatores de Risco"].map((item, index) => (
                   <li className={styles.navLiMobile} key={index}>
                     <Link
                       className={styles.navLinkMobile}
-                      to={item.toLowerCase()}
+                      to={item.toLowerCase().replace(/\s+/g, '')}
                       smooth={true}
                       duration={500}
                       offset={-70}

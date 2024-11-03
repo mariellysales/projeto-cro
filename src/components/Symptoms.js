@@ -3,23 +3,23 @@ import styles from "./Symptoms.module.css";
 
 const icons = [
   {
-    name: "Feridas Persistentes",
+    name: "Feridas persistentes",
     imgSrc: "/images/sintomas/feridasPersistentes.jpg",
   },
   {
-    name: "Manchas Vermelhas ou Brancas",
+    name: "Manchas vermelhas ou brancas",
     imgSrc: "/images/sintomas/manchasVermelhas.jpg",
   },
   {
-    name: "Inchaço ou Nódulos",
+    name: "Inchaço ou nódulos",
     imgSrc: "/images/sintomas/inchaco.jpg",
   },
   {
-    name: "Dificuldade para Comer ou Mastigar",
+    name: "Dificuldade para comer ou mastigar",
     imgSrc: "/images/sintomas/dificuldadeComer.jpg",
   },
   {
-    name: "Dores Persistentes",
+    name: "Dores persistentes",
     imgSrc: "/images/sintomas/dorPersistente.jpg",
   },
   {
