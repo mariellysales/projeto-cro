@@ -58,7 +58,7 @@ body {
 }
 
 .navBlock {
-    padding: 35px;
+  padding: 35px;
 }
 
 .navLi:hover .navBlock {
@@ -107,6 +107,7 @@ body {
   body {
     padding-top: 70px;
   }
+
   .headerContainer {
     padding: 0px 70px;
   }
@@ -152,7 +153,7 @@ body {
 @media (max-width: 1127px) {
   body {
     padding-top: 160px;
-}
+  }
 
   .headerContainer {
     padding: 0px 50px;
