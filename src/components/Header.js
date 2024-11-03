@@ -55,7 +55,7 @@ function Header() {
                   to={item.toLowerCase().replace(/\s+/g, '')}
                   smooth={true}
                   duration={500}
-                  offset={-100}
+                  offset={-80}
                 >
                   <div className={styles.navBlock}>
                     {item}

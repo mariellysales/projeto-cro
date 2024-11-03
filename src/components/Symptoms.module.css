@@ -11,7 +11,7 @@
   color: #6d131a;
   text-transform: uppercase;
   text-align: center;
-  margin-bottom: 40px;
+  margin-top: auto;
 }
 
 .cards {
@@ -26,12 +26,12 @@
 }
 
 .ulStyle {
-  display: grid;
-  grid-template-columns: repeat(6, 1fr);
-  gap: 30px;
+  display: flex;
   justify-items: center;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
+  justify-content: space-around;
 }
 
 .ulStyle {
@@ -46,6 +46,9 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 200px;
+  height: 280px;
+  text-align: center;
 }
 
 .icons {
@@ -55,57 +58,70 @@
   object-fit: cover;
 }
 
-@media (max-width: 798px) {
-  .sectionCard {
-    max-width: 90%;
-  }
-
+@media (max-width: 1200px) {
   .ulStyle {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1px;
+    gap: 0px 160px;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 
-  .cards {
-    width: 120px;
-    height: 120px;
+  .liStyle {
+    height: 250px;
+  }
+
+}
+
+@media (max-width: 920px) {
+  .ulStyle {
+    gap: 0px 200px;
+  }
+}
+
+
+
+@media (max-width: 798px) {
+  .ulStyle {
+    gap: 25px 100px;
+  }
+  
+  .liStyle {
+    height: 185px;
   }
 
   .cardTitle {
     font-size: 1.8rem;
+    
   }
 
   .title {
     font-size: 0.9em;
     margin-top: 10px;
-    text-align: center;
+  }
+}
+
+@media (max-width: 550px) {
+  .ulStyle {
+    gap: 0px 50px;
+  }
+
+  .liStyle {
+    width: 170px;
+  }
+
+  .cards {
+    width: 20vh;
+    height: 20vh;
   }
 }
 
 @media (max-width: 400px) {
-  .sectionCard {
-    max-width: 90%;
-  }
-
   .ulStyle {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1px;
+    gap: 0px;
   }
 
   .cards {
-    width: 10vh;
-    height: 10vh;
-  }
-
-  .title {
-    font-size: 0.8em;
-    margin-top: 10px;
-    text-align: center;
-  }
-
-  .cardTitle {
-    font-size: 1.5rem;
-    margin-top: 5px;
+    width: 15vh;
+    height: 15vh;
   }
 }
