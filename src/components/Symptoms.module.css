@@ -47,7 +47,7 @@
   flex-direction: column;
   align-items: center;
   width: 200px;
-  height: 280px;
+  height: 190px;
   text-align: center;
 }
 
@@ -107,21 +107,12 @@
 
   .liStyle {
     width: 170px;
-  }
-
-  .cards {
-    width: 20vh;
-    height: 20vh;
+    height: 200px;
   }
 }
 
 @media (max-width: 400px) {
   .ulStyle {
     gap: 0px;
-  }
-
-  .cards {
-    width: 15vh;
-    height: 15vh;
   }
 }
