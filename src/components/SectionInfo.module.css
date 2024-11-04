@@ -1,8 +1,8 @@
 .sectionBanner {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    gap: 200px;
+    gap: 40px;
     padding: 20px 20px;
     background-color: white;
     border-top: 1px solid #e0e0e0;
@@ -33,7 +33,7 @@
 }
 
 .imgBanner {
-    width: 400px;
+    width: 300px;
     height: auto;
     border-radius: 12px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
@@ -42,13 +42,8 @@
 
 @media (max-width: 768px) {
     .sectionBanner {
-        flex-direction: column;
-        gap: 20px;
+        gap: 30px;
         padding: 40px 15px;
-    }
-
-    .imgBanner {
-        width: 300px;
     }
 
     .sectionText {
@@ -62,6 +57,13 @@
 
     .sectionText p {
         font-size: 16px;
+    }
+}
+
+@media (max-width: 650px) {
+    .sectionBanner {
+        flex-direction: column;
+        justify-content: center;
     }
 }
 

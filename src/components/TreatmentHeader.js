@@ -2,12 +2,13 @@ import styles from "./Header.module.css";
 import { FaInstagram, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { FaSquareFacebook } from "react-icons/fa6";
-import { Link } from "react-scroll";
+import { Link, useNavigate } from "react-router-dom";
 
 function Header() {
   const currentUrl = window.location.href;
   const [showAlert, setShowAlert] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
+  const navigate = useNavigate();
 
   const redirectToUrl = (url) => {
     window.open(url, "_blank");
@@ -35,6 +36,10 @@ function Header() {
     setMenuOpen(!menuOpen);
   };
 
+  const handleBackToMenu = () => {
+    navigate("/"); // Redireciona para a página inicial
+  };
+
   return (
     <header className={styles.header}>
       <div className={styles.headerContainer}>
@@ -48,21 +53,11 @@ function Header() {
 
         <nav className={styles.nav}>
           <ul className={styles.navUl}>
-            {["Início", "Conhecimento", "Sintomas", "Auto exame", "Depoimentos", "Fatores de Risco"].map((item, index) => (
-              <li className={styles.navLi} key={index}>
-                <Link
-                  className={styles.navLink}
-                  to={item.toLowerCase().replace(/\s+/g, '')}
-                  smooth={true}
-                  duration={500}
-                  offset={-80}
-                >
-                  <div className={styles.navBlock}>
-                    {item}
-                  </div>
-                </Link>
-              </li>
-            ))}
+            <li className={styles.navLi}>
+              <button className={styles.navLink} onClick={handleBackToMenu}>
+                Voltar ao Menu Inicial
+              </button>
+            </li>
           </ul>
         </nav>
 
@@ -82,22 +77,11 @@ function Header() {
           <div className={styles.mobileOnly}>
             <nav className={styles.navMobile}>
               <ul className={styles.navUlMobile}>
-                {["Início", "Conhecimento", "Sintomas", "Auto exame", "Depoimentos", "Fatores de Risco"].map((item, index) => (
-                  <li className={styles.navLiMobile} key={index}>
-                    <Link
-                      className={styles.navLinkMobile}
-                      to={item.toLowerCase().replace(/\s+/g, '')}
-                      smooth={true}
-                      duration={500}
-                      offset={-70}
-                    >
-                      <div className={styles.navBlock}>
-                        {item}
-                      </div>
-                    </Link>
-                  </li>
-                ))}
-
+                <li className={styles.navLiMobile}>
+                  <button className={styles.navLinkMobile} onClick={handleBackToMenu}>
+                    Voltar ao Menu Inicial
+                  </button>
+                </li>
                 <div className={styles.socialIconsMobile}>
                   <button className={`${styles.socialIconMobile} ${styles.facebook}`} onClick={facebookRedirect}>
                     <FaSquareFacebook />
