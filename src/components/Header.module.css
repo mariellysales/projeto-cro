@@ -77,6 +77,12 @@ body {
   color: white;
 }
 
+.shareLabelDesktop {
+  color: black;
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
 .socialIcons {
   display: flex;
   gap: 15px;
@@ -188,7 +194,8 @@ body {
   }
 
   .nav,
-  .socialIcons {
+  .socialIcons,
+  .shareLabelDesktop {
     display: none;
   }
 
@@ -255,10 +262,17 @@ body {
     color: #6d131a;
   }
 
+  .shareLabelMobile {
+    color: black;
+    margin-bottom: 0;
+    text-align: center;
+    font-size: 14px;
+  }
+
   .socialIconsMobile {
     display: flex;
     gap: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     justify-content: center;
   }
 

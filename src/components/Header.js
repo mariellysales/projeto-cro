@@ -66,18 +66,20 @@ function Header() {
           </ul>
         </nav>
 
-        <div className={styles.socialIcons}>
-          <button className={`${styles.socialIcon} ${styles.facebook}`} onClick={facebookRedirect}>
-            <FaSquareFacebook />
-          </button>
-          <button className={`${styles.socialIcon} ${styles.instagram}`} onClick={copyToClipboard}>
-            <FaInstagram />
-          </button>
-          <button className={`${styles.socialIcon} ${styles.whatsapp}`} onClick={whatsappRedirect}>
-            <FaWhatsapp />
-          </button>
+        <div>
+          <p className={styles.shareLabelDesktop}>Compartilhe:</p>
+          <div className={styles.socialIcons}>
+            <button className={`${styles.socialIcon} ${styles.facebook}`} onClick={facebookRedirect}>
+              <FaSquareFacebook />
+            </button>
+            <button className={`${styles.socialIcon} ${styles.instagram}`} onClick={copyToClipboard}>
+              <FaInstagram />
+            </button>
+            <button className={`${styles.socialIcon} ${styles.whatsapp}`} onClick={whatsappRedirect}>
+              <FaWhatsapp />
+            </button>
+          </div>
         </div>
-
         {menuOpen && (
           <div className={styles.mobileOnly}>
             <nav className={styles.navMobile}>
@@ -98,17 +100,20 @@ function Header() {
                   </li>
                 ))}
 
-                <div className={styles.socialIconsMobile}>
-                  <button className={`${styles.socialIconMobile} ${styles.facebook}`} onClick={facebookRedirect}>
-                    <FaSquareFacebook />
-                  </button>
-                  <button className={`${styles.socialIconMobile} ${styles.instagram}`} onClick={copyToClipboard}>
-                    <FaInstagram />
-                  </button>
-                  <button className={`${styles.socialIconMobile} ${styles.whatsapp}`} onClick={whatsappRedirect}>
-                    <FaWhatsapp />
-                  </button>
-                </div>
+                <div>
+                  <p className={styles.shareLabelMobile}>Compartilhe:</p>
+                  <div className={styles.socialIconsMobile}>
+                    <button className={`${styles.socialIconMobile} ${styles.facebook}`} onClick={facebookRedirect}>
+                      <FaSquareFacebook />
+                    </button>
+                    <button className={`${styles.socialIconMobile} ${styles.instagram}`} onClick={copyToClipboard}>
+                      <FaInstagram />
+                    </button>
+                    <button className={`${styles.socialIconMobile} ${styles.whatsapp}`} onClick={whatsappRedirect}>
+                      <FaWhatsapp />
+                    </button>
+                  </div>
+                  </div>
               </ul>
             </nav>
           </div>
