@@ -2,7 +2,7 @@ import styles from "./Header.module.css";
 import { FaInstagram, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { FaSquareFacebook } from "react-icons/fa6";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Header() {
   const currentUrl = window.location.href;
