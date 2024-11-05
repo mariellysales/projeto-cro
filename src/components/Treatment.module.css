@@ -1,0 +1,30 @@
+.treatmentContainer {
+    padding: 20px;
+    text-align: center;
+}
+
+.treatmentTitle {
+    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    color: #6d131a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.subTreatment {
+    font-size: 1.3rem;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+    color: #6d131a;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.pTreatment {
+    font-size: 18px;
+    margin: auto;
+    font-family: 'Montserrat', sans-serif;
+    color: #532d30;
+    text-align: left;
+    width: 80%;
+}
