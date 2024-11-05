@@ -6,12 +6,11 @@ function Footer() {
     return (
         <footer className={styles.footer}>
             <div className={styles.container}>
-                <div className={styles.contact}>
-                    <p className= {styles.information}><FaMapMarkerAlt />Endereço: Rua Desembargador Otávio do Amaral, 1088 - Bigorrilho, Curitiba - PR, CEP: 80710-620</p>
-                    <p className= {styles.information}><FaEnvelope />E-mail para contato: contato@cropr.org.br</p>
-                    <p className= {styles.information}><FaWhatsapp />Whatsapp Secretária: (41) 99680-3735 - SOMENTE TEXTO</p>
-                    <p className= {styles.information}><FaPhone />Telefone para contato: +55 (41) 3025-9500</p>
-                    <p className= {styles.information}><FaRegClock />Horário de atendimento: Segunda a Sexta: 08:30 às 17:30</p>
+                <div className={styles.logo}>
+                    <img src="/images/footer/prefeitura_logo.png" alt="Logo" className={styles.imageLogo} />
+                </div>
+                <div className={styles.logo}>
+                    <img src="/images/footer/3_semana.png" alt="Logo" className={styles.imageLogo} />
                 </div>
                 <div className={styles.logo}>
                     <img src="/images/cro.png" alt="Logo" className={styles.imageLogo} />

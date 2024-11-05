@@ -9,7 +9,7 @@ import FactorsRisk from './components/FactorsRisk';
 import SectionInfo from './components/SectionInfo';
 import Coments from './components/Coments';
 import SelfExam from './components/SelfExam';
-import Contact from './components/Contact';
+import Treatment from './components/Treatment';
 import TreatmentPage from './pages/TreatmentPage'; // Importa a página de tratamento
 import TreatmentHeader from './components/TreatmentHeader';
 
@@ -28,7 +28,7 @@ function App() {
                         <div id="autoexame"><SelfExam /></div>
                         <div id="depoimentos"><Coments /></div>
                         <div id="fatoresderisco"><FactorsRisk /></div>
-                        <div id="Contact"><Contact /></div>
+                        <div id="fatoresderisco"><Treatment /></div>
                     </>
                 } />
 
