@@ -35,9 +35,9 @@ const Coments = () => {
                                 allowFullScreen
                             ></iframe>
                         </div>
-                        <div className={styles.coment}>
+                        {/* <div className={styles.coment}>
                             <p className={styles.comentText}>{coment.text}</p>
-                        </div>
+                        </div> */}
                     </div>
                 ))}
             </div>
