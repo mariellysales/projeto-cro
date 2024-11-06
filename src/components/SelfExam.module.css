@@ -75,9 +75,8 @@
 
 @media (max-width: 400px) {
     .containerExam {
-        grid-template-columns: 1fr;
-        /* uma coluna */
-        gap: 10px;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1px;
         padding: 5px;
     }
 

@@ -19,7 +19,7 @@ const Slider = () => {
     },
     {
       id: "2",
-      image: "/images/banner/banner2.jpg",
+      image: "/images/banner/banner2.png",
     },
     {
       id: "3",
@@ -57,7 +57,7 @@ const Slider = () => {
 
       <Modal isOpen={isModalOpen} onClose={closeModal}>
         <iframe
-          src="https://www.youtube.com/embed/RPY26UGsxLc?si=WyrmHcTWEo9TwuVn"
+          src="https://www.youtube.com/embed/BocAIUGc0Sw?si=t1DEIaye911Eenoc"
           title="YouTube video player"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen

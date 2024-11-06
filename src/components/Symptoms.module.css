@@ -113,6 +113,8 @@
 
 @media (max-width: 400px) {
   .ulStyle {
-    gap: 0px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1px;
   }
 }
