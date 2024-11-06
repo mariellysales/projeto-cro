@@ -6,16 +6,16 @@ const Coments = () => {
 
     const comentsData = [
         { 
-            videoUrl: "https://www.youtube.com/embed/RPY26UGsxLc?si=WyrmHcTWEo9TwuVn",
-           text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            videoUrl: "https://www.youtube.com/embed/BocAIUGc0Sw?si=t1DEIaye911Eenoc",
+           text: "Neste vídeo, a Profa. Dra. Thais Gimenez Miniello entrevista o Dr. Paulo César Ribeiro, cirurgião-dentista do Centro de Especialidades Odontológicas da Secretaria Municipal de Saúde de Londrina. Dr. Paulo compartilha sua experiência pessoal com o câncer de boca, detalhando as etapas de detecção, os primeiros sintomas, o diagnóstico e o tratamento. A entrevista oferece uma visão humanizada e educativa, ressaltando a importância do diagnóstico precoce e da prevenção, tornando-se um recurso valioso para a comunidade e profissionais de saúde."
         },
         {
             videoUrl: "https://www.youtube.com/embed/DJoa1p5v2tI?si=q3BjhiM7j148QTpf",
-            text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+            text: "Assim como os amores e as estações do ano, nossa voz também pode nos deixar... Neste vídeo, conhecemos a história de uma mulher que, ao enfrentar um câncer de laringe, perdeu a voz. Embora a cirurgia tenha salvado sua vida, ela trouxe consequências físicas e emocionais profundas. A grande questão passou a ser como continuar vivendo após essa perda de identidade. A história é um convite para a reflexão e conscientização sobre os desafios e resiliência de quem passa por esse tipo de experiência."
         },
         {
             videoUrl: "https://www.youtube.com/embed/_7d0bPOAe4Q?si=jEDbitWpi3qcJ1Tw",
-            text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+            text: "Este vídeo destaca as jornadas de transformação de pessoas afetadas pelo câncer, evidenciando o poder das histórias compartilhadas para promover mudanças reais. Com o objetivo de unir corações e mentes, mostramos como o envolvimento de todos – tanto de quem enfrenta a doença quanto de agentes de transformação – pode trazer mudanças significativas. A mensagem central é o fortalecimento da detecção precoce, da prevenção e da inclusão, contribuindo para uma sociedade mais informada e solidária."
         },
     ]
 
@@ -35,9 +35,9 @@ const Coments = () => {
                                 allowFullScreen
                             ></iframe>
                         </div>
-                        {/* <div className={styles.coment}>
+                        <div className={styles.coment}>
                             <p className={styles.comentText}>{coment.text}</p>
-                        </div> */}
+                        </div>
                     </div>
                 ))}
             </div>

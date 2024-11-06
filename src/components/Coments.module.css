@@ -37,9 +37,12 @@
 }
 
 .comentText {
-    font-size: 1em;
-    line-height: 1.5;
-    color: #666;
+    font-size: 0.9em;
+    line-height: 1.1em;
+    font-weight: 540;
+    color: #6d131a;
+    text-align: justify;
+    margin-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
 }
 
