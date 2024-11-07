@@ -11,7 +11,7 @@ const pageSelfExam = () => {
         { name: "Apalpe a língua", imgSrc: "/images/autoExame/apalparLingua.jpg" },
         { name: "Lingua para o lado", imgSrc: "/images/autoExame/linguaLado.jpg" },
         { name: "Lateral da bochecha", imgSrc: "/images/autoExame/lateralBochecha.jpg" },
-        { name: "Apalpe o açoalho", imgSrc: "/images/autoExame/apalparAssoalho.jpg" },
+        { name: "Apalpe o assoalho", imgSrc: "/images/autoExame/apalparAssoalho.jpg" },
         { name: "Apalpe o pescoço", imgSrc: "/images/autoExame/apalparPescoco.jpg" },
     ];
 
