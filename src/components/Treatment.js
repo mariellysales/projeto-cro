@@ -1,18 +1,68 @@
 import React from "react";
 import style from "./Treatment.module.css";
 
+const treatments = [
+  {
+    description: "Remoção do tumor e tecidos adjacentes afetados.",
+    img: "/images/cirurgia.png",
+    alt: "Cirurgia",
+  },
+  {
+    description: "Uso de radiações para destruir células cancerígenas.",
+    img: "/images/radioterapia.png",
+    alt: "Radioterapia",
+  },
+  {
+    description:
+      "Administração de medicamentos para eliminar células malignas.",
+    img: "/images/quimioterapia.png",
+    alt: "Quimioterapia",
+  },
+  {
+    description:
+      "Tratamento que atinge os pontos fracos das células do câncer, ajudando a parar seu crescimento.",
+    img: "/images/terapias-alvo.png",
+    alt: "Terapias Alvo",
+  },
+  {
+    description:
+      "Fortalece as defesas naturais do corpo para ajudar a combater o câncer.",
+    img: "/images/imunoterapia.png",
+    alt: "Imunoterapia",
+  },
+  {
+    description:
+      "Procedimentos para restaurar a funcionalidade e aparência após a cirurgia.",
+    img: "/images/reabilitacao.png",
+    alt: "Reabilitação",
+  },
+];
+
 const Treatment = () => {
-    return (
-        <section className={style.treatmentContainer}>
-            <h2 className={style.treatmentTitle}>TRATAMENTO</h2>
-            <p className={style.subTreatment}>O tratamento do câncer de boca varia conforme o estágio da doença e pode incluir:</p>
-            <p className={style.pTreatment}><b>Cirurgia:</b> Remoção do tumor e tecidos adjacentes afetados.</p>
-            <p className={style.pTreatment}><b>Radioterapia:</b> Uso de radiações para destruir células cancerígenas.</p>
-            <p className={style.pTreatment}><b>Quimioterapia:</b> Administração de medicamentos para eliminar células malignas.</p>
-            <p className={style.pTreatment}><b>Terapias Alvo e Imunoterapia:</b> Tratamentos avançados que visam especificamente as células cancerosas ou fortalecem o sistema imunológico.</p>
-            <p className={style.pTreatment}><b>Reabilitação e Reconstructiva:</b> Procedimentos para restaurar a funcionalidade e aparência após a cirurgia.</p>            
-        </section>
-    );
-}
+  return (
+    <section className={style.treatmentContainer}>
+      <h2 className={style.treatmentTitle}>TRATAMENTO</h2>
+      <div className={style.treatmentGrid}>
+        {treatments.map((treatment, index) => (
+          <div
+            key={index}
+            className={`${style.treatmentItem} ${
+              index % 2 === 0 ? style.leftAlign : style.rightAlign
+            }`}
+          >
+            <img
+              className={style.treatmentImg}
+              src={treatment.img}
+              alt={treatment.alt}
+            />
+            <div className={style.treatmentDescription}>
+              <p>{treatment.description}</p>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
 
 export default Treatment;
