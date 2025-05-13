@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,13 +10,13 @@ import SectionInfo from './components/SectionInfo';
 import Coments from './components/Coments';
 import SelfExam from './components/SelfExam';
 import Treatment from './components/Treatment';
-import TreatmentPage from './pages/TreatmentPage'; // Importa a página de tratamento
+import PolitcsPage from './pages/PolitcsPage'; // Importa a página de tratamento
 import TreatmentHeader from './components/TreatmentHeader';
+import ConsentModal from './components/ConsentModal';
 
 function App() {
     return (
         <div>
-
             <Routes>
                 <Route path="/" element={
                     <>
@@ -32,15 +32,16 @@ function App() {
                     </>
                 } />
 
-                <Route path="/tratamento" element={
+                <Route path="/politicas" element={
                     <>
                         <TreatmentHeader />
-                        <TreatmentPage />
+                        <PolitcsPage />
                     </>
                 } />
             </Routes>
 
             <Footer />
+            <ConsentModal />
         </div>
     );
 }

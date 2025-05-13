@@ -16,13 +16,23 @@ function Footer() {
                 </div>
             </div>
             <div className={styles.copy}>
-                <p>
-                    &copy; 2024 Equipe de desenvolvimento:
-                    <a href="https://www.linkedin.com/in/diego-araujo-souza/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> Diego </a>
-                    e
-                    <a href="https://www.linkedin.com/in/marielly-sales-937407206" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}> Marielly </a>
+                <div>
+                    &copy; 2024 Promovido por:
+                </div>
+                <div>
+                    <a href="https://www.up.edu.br/ecohub/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        <img src="/images/logos/ecohub1.png" alt="Ecohub logo" className={styles.footerLogoImage} />
+                    </a>
+                </div>
+                e
+                <div>
+                    <a href="https://www.up.edu.br/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
+                        <img src="/images/logos/positivo1.png" alt="Positivo logo" className={styles.footerLogoImage} />
+                    </a>
+                </div>
+                <div>
                     Todos os direitos reservados.
-                </p>
+                </div>
             </div>
         </footer>
     );

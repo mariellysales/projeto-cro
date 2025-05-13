@@ -1,81 +1,102 @@
 .footer {
-    background-color: #64646407;
+  background-color: #64646407;
 }
 
 .container {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 0 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 100px;
 }
 
 .contact p {
-    display: flex;
-    align-items: center;
-    margin: 10px 0;
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
 }
 
 .contact p svg {
-    margin-right: 12px;
-    color: #6d131a;
-    font-size: 20px;
+  margin-right: 12px;
+  color: #6d131a;
+  font-size: 20px;
 }
 
 .logo {
-    flex: 1;
-    text-align: center;
+  flex: 1;
+  text-align: center;
 }
 
 .imageLogo {
-    height: 115px;
+  height: 115px;
+}
+
+.footerLogoImage {
+  height: 40px;
+  padding: 0 10px;
 }
 
 .link:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .copy {
-    text-align: center;
-    padding: 10px 0;
-    background-color: #6d131a;
-    color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #6d131a;
+  color: white;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 1150px) {
-    .imageLogo {
-        height: 70px;
-        margin-left: 5px;
-    }
+  .imageLogo {
+    height: 70px;
+    margin-left: 5px;
+  }
 
-    .container {
-        padding: 0 40px;
-    }
+  .container {
+    padding: 0 40px;
+  }
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
-    }
+  .container {
+    flex-direction: column;
+  }
 
-    .information {
-        font-size: 15px;
-    }
+  .information {
+    font-size: 15px;
+  }
+
+  .footerLogoImage {
+    height: 30px;
+    padding: 0 10px;
+  }
+}
+@media (max-width: 420px) {
+  .copy {
+    flex-direction: column;
+  }
 }
 
 @media (max-width: 400px) {
-    .contact p svg {
-        font-size: 15px;
-    }
+  .contact p svg {
+    font-size: 15px;
+  }
 
-    .imageLogo {
-        height: 60px;
-    }
+  .imageLogo {
+    height: 60px;
+  }
 
-    .container {
-        display: flex;
-    }
+  .container {
+    display: flex;
+  }
 
-    .information {
-        font-size: 15px;
-    }
+  .information {
+    font-size: 15px;
+  }
 }

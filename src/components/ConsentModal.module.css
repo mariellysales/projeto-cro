@@ -1,0 +1,42 @@
+.consentModal {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #6d131a;
+  padding: 20px;
+  border-top: 1px solid #ccc;
+  text-align: center;
+  z-index: 9999;
+  font-size: 14px;
+  color: #fff;
+}
+
+.consentButtons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.seeMore {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  padding: 8px 16px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.Agree {
+  background-color: #fff;
+  color: #6d131a;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 16px;
+}
