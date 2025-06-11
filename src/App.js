@@ -26,8 +26,8 @@ function App() {
                         <div id="conhecimento"><SectionInfo /></div>
                         <div id="dados"><Facts /></div>
                         <div id="sintomas"><Symptoms /></div>
-                        <div id="formulario"><ScreeningForm /></div>
                         <div id="autoexame"><SelfExam /></div>
+                        <div id="formulario"><ScreeningForm /></div>
                         <div id="depoimentos"><Coments /></div>
                         <div id="fatoresderisco"><FactorsRisk /></div>
                         <div id="fatoresderisco"><Treatment /></div>

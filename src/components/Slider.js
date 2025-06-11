@@ -27,18 +27,10 @@ const Slider = () => {
       id: "3",
       image: "/images/banner/banner3.jpg",
     },
-    {
-      id: "4",
-      image: "/images/banner/formulario1.jpg",
-    },
   ];
 
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
-
-  const handleNavigatePrefeituraPage = () => {
-        window.open("https://portal.londrina.pr.gov.br/index.php?option=com_rsform&view=rsform&formId=72", "_blank");
-  };
 
   return (
     <div className={styles.container}>
@@ -59,7 +51,7 @@ const Slider = () => {
               src={slide.image}
               alt={slide.id}
               className={styles.slideItem}
-              onClick={index === 0 ? openModal : undefined || slide.id === '4' ? handleNavigatePrefeituraPage : undefined} 
+              onClick={index === 0 ? openModal : undefined} 
             />
           </SwiperSlide>
         ))}
