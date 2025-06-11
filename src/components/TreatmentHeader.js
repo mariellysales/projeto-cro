@@ -3,6 +3,7 @@ import { FaInstagram, FaWhatsapp, FaBars, FaTimes } from "react-icons/fa";
 import { useState } from "react";
 import { FaSquareFacebook } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { Link } from "react-scroll";
 
 function Header() {
   const currentUrl = window.location.href;
@@ -54,9 +55,17 @@ function Header() {
         <nav className={styles.nav}>
           <ul className={styles.navUl}>
             <li className={styles.navLi}>
-              <button className={styles.navLink} onClick={handleBackToMenu}>
-                Voltar ao Menu Inicial
-              </button>
+              <Link
+                className={styles.navLink}
+                onClick={handleBackToMenu}
+                smooth={true}
+                duration={500}
+                offset={-80}
+              >
+                <div className={styles.navBlock}>
+                  Voltar ao Menu Inicial
+                </div>
+              </Link>
             </li>
           </ul>
         </nav>

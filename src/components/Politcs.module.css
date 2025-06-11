@@ -4,3 +4,24 @@
 .primaryColor {
   color: #6d131a;
 }
+
+.navUl {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+}
+
+.navLi {
+  display: flex;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  justify-content: center;
+}
+
+.navBlock {
+  padding: 35px;
+}
+
+.navLi:hover .navBlock {
+  background-color: #6d131a;
+}

@@ -5,14 +5,14 @@ const ConsentModal = () => {
     const [show, setShow] = useState(false);
 
     useEffect(() => {
-        const consent = localStorage.getItem('formConsent');
+        const consent = sessionStorage.getItem('formConsent');
         if (!consent) {
             setShow(true);
         }
     }, []);
 
     const handleAgree = () => {
-        localStorage.setItem('formConsent', 'true');
+        sessionStorage.setItem('formConsent', 'true');
         setShow(false);
     };
 

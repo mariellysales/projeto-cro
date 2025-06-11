@@ -24,7 +24,6 @@ function Footer() {
                         <img src="/images/logos/ecohub1.png" alt="Ecohub logo" className={styles.footerLogoImage} />
                     </a>
                 </div>
-                e
                 <div>
                     <a href="https://www.up.edu.br/" target="_blank" rel="noopener noreferrer" style={{ color: 'inherit', textDecoration: 'none' }}>
                         <img src="/images/logos/positivo1.png" alt="Positivo logo" className={styles.footerLogoImage} />

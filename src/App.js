@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
@@ -10,6 +10,7 @@ import SectionInfo from './components/SectionInfo';
 import Coments from './components/Coments';
 import SelfExam from './components/SelfExam';
 import Treatment from './components/Treatment';
+import ScreeningForm from './components/ScreeningForm';
 import PolitcsPage from './pages/PolitcsPage'; // Importa a página de tratamento
 import TreatmentHeader from './components/TreatmentHeader';
 import ConsentModal from './components/ConsentModal';
@@ -25,10 +26,12 @@ function App() {
                         <div id="conhecimento"><SectionInfo /></div>
                         <div id="dados"><Facts /></div>
                         <div id="sintomas"><Symptoms /></div>
+                        <div id="formulario"><ScreeningForm /></div>
                         <div id="autoexame"><SelfExam /></div>
                         <div id="depoimentos"><Coments /></div>
                         <div id="fatoresderisco"><FactorsRisk /></div>
                         <div id="fatoresderisco"><Treatment /></div>
+                        <div id="formulario"><ScreeningForm /></div>
                     </>
                 } />
 

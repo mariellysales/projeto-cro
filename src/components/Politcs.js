@@ -1,5 +1,4 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
 import styles from './Politcs.module.css';
 
 function Politcs() {
@@ -7,7 +6,7 @@ function Politcs() {
     <div className={styles.container}>
       <section>
         <h1 className={styles.primaryColor}>Política de Privacidade</h1>
-        <p>O Conselho Regional de Odontologia do Paraná (CROPR) respeita a privacidade dos visitantes do seu site e está comprometido em proteger os dados pessoais que possam ser eventualmente coletados.</p>
+        <p>De acordo com a Lei Geral de Proteção de Dados Pessoais <strong>(LGPD - Lei nº 13.709/2018)</strong> O Conselho Regional de Odontologia do Paraná (CROPR) respeita a privacidade dos visitantes do seu site e está comprometido em proteger os dados pessoais que possam ser eventualmente coletados.</p>
 
         <h4>1. Coleta de dados</h4>
         <p>Nosso site <strong>não realiza coleta, armazenamento ou tratamento direto de dados pessoais</strong> dos visitantes. No entanto, disponibilizamos um <strong>formulário incorporado via iframe</strong> de responsabilidade de terceiros. Ao preencher e enviar esse formulário, o usuário fornece dados diretamente à plataforma externa, sobre a qual o CROPR <strong>não tem controle nem acesso</strong>.</p>
@@ -26,13 +25,11 @@ function Politcs() {
 
         <h4>6. Alterações nesta política</h4>
         <p>Esta Política de Privacidade poderá ser atualizada periodicamente.</p>
-
-        <p>Para dúvidas, entre em contato pelo e-mail: [inserir email institucional].</p>
       </section>
 
       <section>
           <h1 className={styles.primaryColor}>Política de Cookies</h1>
-          <p>O site do Conselho Regional dos Oficiais de Registro do Paraná (CROPR) <strong>não utiliza cookies próprios</strong> com fins de coleta de dados pessoais, rastreamento ou publicidade.</p>
+          <p>O site do  Conselho Regional de Odontologia do Paraná (CROPR) <strong>não utiliza cookies próprios</strong> com fins de coleta de dados pessoais, rastreamento ou publicidade.</p>
 
           <h4>Cookies de terceiros</h4>
           <p>O formulário incorporado em nosso site pode utilizar cookies de terceiros, para funcionalidades como segurança, autenticação ou análise de uso. Esses cookies são de responsabilidade da plataforma que fornece o formulário e estão sujeitos às políticas dessa entidade.</p>

@@ -1,0 +1,75 @@
+.treatmentContainer {
+  margin: 80px 0;
+}
+.treatmentTitle {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #6d131a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.iframeContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.redirectButton {
+  padding: 14px 28px;
+  font-size: 18px;
+  background-color: #6d131a;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.redirectButton:hover {
+  background-color: #8a1a22;
+  transform: scale(1.05);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+  .treatmentContainer {
+    margin: 10px 0;
+  }
+  .treatmentGrid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px;
+  }
+
+  .treatmentItem {
+    padding: 10px;
+    align-items: flex-start;
+  }
+
+  .treatmentImg {
+    height: 190px;
+  }
+}
+
+@media (max-width: 496px) {
+  .treatmentDescription {
+    font-size: 15px;
+  }
+
+  .treatmentItem {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 400px) {
+  .treatmentGrid {
+    grid-template-columns: 1fr;
+    padding: 10px;
+  }
+}
