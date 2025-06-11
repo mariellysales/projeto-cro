@@ -11,9 +11,14 @@ const Treatment = () => {
   return (
     <section className={style.treatmentContainer}>
       <div className={style.iframeContainer}>
-        <button className={style.redirectButton} onClick={handleRedirect}>
-          Faça sua triagem.
-        </button>
+        <div className={style.imageContainer}>
+          <img
+                src={"/images/banner/formulario.jpg"}
+                alt={'form'}
+                onClick={handleRedirect} 
+                className={style.image}
+              />
+        </div>
       </div>
     </section>
   );
