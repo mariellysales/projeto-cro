@@ -1,94 +1,94 @@
 .sectionBanner {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 40px;
-    padding: 20px 20px;
-    background-color: white;
-    border-top: 1px solid #e0e0e0;
-    border-bottom: 1px solid #e0e0e0;
-    border-radius: 16px;
-    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
-    margin: 1%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 40px;
+  padding: 20px 20px;
+  background-color: white;
+  border-top: 1px solid #e0e0e0;
+  border-bottom: 1px solid #e0e0e0;
+  border-radius: 16px;
+  box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+  margin: 1%;
 }
 
 .sectionText {
-    flex: 1;
-    max-width: 600px;
+  flex: 1;
+  max-width: 600px;
 }
 
 .sectionText h3 {
-    font-size: 28px;
-    font-weight: bold;
-    font-family: 'Montserrat', sans-serif;
-    color: #6d131a;
-    margin-bottom: 16px;
+  font-size: 28px;
+  font-weight: bold;
+  font-family: "Montserrat", sans-serif;
+  color: #6d131a;
+  margin-bottom: 16px;
 }
 
 .sectionText p {
-    font-size: 18px;
-    line-height: 1.6;
-    font-family: 'Montserrat', sans-serif;
-    color: #532d30;
+  font-size: 18px;
+  line-height: 1.6;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
 }
 
 .imgBanner {
-    width: 300px;
-    height: auto;
-    border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+  width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
 }
 
 @media (max-width: 768px) {
-    .sectionBanner {
-        gap: 30px;
-        padding: 40px 15px;
-    }
+  .sectionBanner {
+    gap: 30px;
+    padding: 40px 15px;
+  }
 
-    .sectionText {
-        text-align: center;
-        max-width: 90%;
-    }
+  .sectionText {
+    text-align: center;
+    max-width: 90%;
+  }
 
-    .sectionText h3 {
-        font-size: 24px;
-    }
+  .sectionText h3 {
+    font-size: 24px;
+  }
 
-    .sectionText p {
-        font-size: 16px;
-    }
+  .sectionText p {
+    font-size: 16px;
+  }
 }
 
 @media (max-width: 650px) {
-    .sectionBanner {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .sectionBanner {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 
 @media (max-width: 400px) {
-    .sectionBanner {
-        flex-direction: column;
-        gap: 10px;
-        padding: 20px 10px;
-    }
+  .sectionBanner {
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px 10px;
+  }
 
-    .imgBanner {
-        width: 80%;
-        margin-left: 10%;
-    }
+  .imgBanner {
+    width: 80%;
+    margin-left: 10%;
+  }
 
-    .sectionText {
-        text-align: center;
-        max-width: 100%;
-    }
+  .sectionText {
+    text-align: center;
+    max-width: 100%;
+  }
 
-    .sectionText h3 {
-        font-size: 20px;
-    }
+  .sectionText h3 {
+    font-size: 20px;
+  }
 
-    .sectionText p {
-        font-size: 14px;
-    }
+  .sectionText p {
+    font-size: 14px;
+  }
 }
