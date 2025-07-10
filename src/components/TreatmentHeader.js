@@ -49,7 +49,7 @@ function Header() {
         </div>
 
         <div className={styles.logo}>
-          <img className={styles.imageLogo} src="/images/cro.png" alt="Logo" />
+          <img className={styles.imageLogo} src="/images/cro-previne.png" alt="Logo" />
         </div>
 
         <nav className={styles.nav}>
